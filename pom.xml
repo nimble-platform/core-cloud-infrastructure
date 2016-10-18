@@ -8,11 +8,10 @@
     <artifactId>cloud-infrastructure</artifactId>
     <packaging>pom</packaging>
     <version>0.0.1-SNAPSHOT</version>
-    <name>nimble-cloud-native-infrastructure</name>
-    <description>Nimble Cloud-Native Application Infrastructure</description>
+    <name>Nimble Cloud-Native Application Infrastructure</name>
 
     <modules>
-        <module>service-disovery</module>
+        <module>service-discovery</module>
         <module>config-server</module>
     </modules>
 

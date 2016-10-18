@@ -3,12 +3,10 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>eu.nimble.core.infrastructure</groupId>
     <artifactId>config-server</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>jar</packaging>
-    <name>nimble-config-server</name>
-    <description>Nimble Config Server</description>
+    <name>Nimble Config Server</name>
 
     <parent>
         <groupId>eu.nimble.core.infrastructure</groupId>
@@ -18,7 +16,7 @@
     </parent>
 
     <properties>
-        <start-class>io.springbox.configserver.SpringboxConfigServerApplication</start-class>
+        <start-class>eu.nimble.core.infrastructure.ConfigServerApplication</start-class>
     </properties>
 
     <dependencies>
@@ -29,6 +27,11 @@
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-config-server</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-netflix-eureka-client</artifactId>
+            <version>RELEASE</version>
         </dependency>
     </dependencies>
 </project>

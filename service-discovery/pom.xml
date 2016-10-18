@@ -3,12 +3,10 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-    <groupId>eu.nimble.core.infrastructure</groupId>
-    <artifactId>service-disovery</artifactId>
+    <artifactId>service-discovery</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
-	<name>nimble-service-disovery</name>
-	<description>Nimble Service Disovery</description>
+	<name>Nimble Service Discovery</name>
 
 	<parent>
 		<groupId>eu.nimble.core.infrastructure</groupId>
@@ -18,7 +16,7 @@
 	</parent>
 
 	<properties>
-		<start-class>io.springbox.eureka.SpringboxEurekaApplication</start-class>
+		<start-class>eu.nimble.core.infrastructure.EurekaApplication</start-class>
 	</properties>
 
 	<dependencies>
