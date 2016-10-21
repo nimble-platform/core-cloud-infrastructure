@@ -1,7 +1,7 @@
 ---
 applications:
 - name: service-discovery
-  host: service-discovery
+  host: nimble-service-discovery
   memory: 512M
   instances: 1
   buildpack: java_buildpack

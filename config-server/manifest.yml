@@ -1,7 +1,7 @@
 ---
 applications:
 - name: config-server
-  host: config-server
+  host: nimble-config-server
   memory: 512M
   instances: 1
   buildpack: java_buildpack

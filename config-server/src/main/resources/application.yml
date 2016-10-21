@@ -1,20 +1,10 @@
-eureka:
-  client:
-    serviceUrl:
-      defaultZone: http://service-discovery.local.pcfdev.io:8761/eureka/
-    registerWithEureka: true
-    fetchRegistry: true
-logging:
-  level: DEBUG
-server:
-  port: 8888
-spring.cloud.config.server.git.uri: https://github.com/mstine/springbox-config-repo.git
-
-
----
 spring:
-  profiles: cloud
-eureka:
-  instance:
-    hostname: ${vcap.application.uris[0]}
-    nonSecurePort: 80
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/jinnerbichler/nimble_test_config_rep0
+server:
+    port: 8888

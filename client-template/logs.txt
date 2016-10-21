@@ -1,0 +1,832 @@
+Connected, tailing logs for app eureka-test in org pcfdev-org / space pcfdev-space as user...
+
+2016-10-18T13:34:21.68+0200 [APP/0]      OUT 2016-10-18 11:34:21.685 DEBUG 18 --- [t-Conn-Cleaner2] c.n.d.shared.MonitoredConnectionManager  : Closing connections idle longer than 30000 SECONDS
+2016-10-18T13:34:21.68+0200 [APP/0]      OUT 2016-10-18 11:34:21.685 DEBUG 18 --- [t-Conn-Cleaner2] c.n.d.shared.NamedConnectionPool         : Closing connections idle longer than 30000 SECONDS
+2016-10-18T13:34:21.68+0200 [APP/0]      OUT 2016-10-18 11:34:21.686 DEBUG 18 --- [t-Conn-Cleaner2] c.n.d.shared.MonitoredConnectionManager  : Closing connections idle longer than -1 SECONDS
+2016-10-18T13:34:21.68+0200 [APP/0]      OUT 2016-10-18 11:34:21.687 DEBUG 18 --- [t-Conn-Cleaner2] c.n.d.shared.NamedConnectionPool         : Closing connections idle longer than 0 SECONDS
+2016-10-18T13:34:21.84+0200 [APP/0]      OUT 2016-10-18 11:34:21.844  INFO 18 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2016-10-18T13:34:21.84+0200 [APP/0]      OUT 2016-10-18 11:34:21.844  INFO 18 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2016-10-18T13:34:21.84+0200 [APP/0]      OUT 2016-10-18 11:34:21.844  INFO 18 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2016-10-18T13:34:21.84+0200 [APP/0]      OUT 2016-10-18 11:34:21.844  INFO 18 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2016-10-18T13:34:21.84+0200 [APP/0]      OUT 2016-10-18 11:34:21.844  INFO 18 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2016-10-18T13:34:21.84+0200 [APP/0]      OUT 2016-10-18 11:34:21.844  INFO 18 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2016-10-18T13:34:21.84+0200 [APP/0]      OUT 2016-10-18 11:34:21.844  INFO 18 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2016-10-18T13:34:21.84+0200 [APP/0]      OUT 2016-10-18 11:34:21.845 DEBUG 18 --- [freshExecutor-0] c.n.d.s.t.d.RetryableEurekaHttpClient    : Clearing quarantined list of size 1
+2016-10-18T13:34:21.84+0200 [APP/0]      OUT 2016-10-18 11:34:21.845 DEBUG 18 --- [freshExecutor-0] n.d.s.t.j.AbstractJerseyEurekaHttpClient : Created client for url: http://service-discovery.local.pcfdev.io:8761/eureka/
+2016-10-18T13:34:21.84+0200 [APP/0]      OUT 2016-10-18 11:34:21.846 DEBUG 18 --- [freshExecutor-0] c.n.d.shared.MonitoredConnectionManager  : Get connection: {}->http://service-discovery.local.pcfdev.io:8761, timeout = 5000
+2016-10-18T13:34:21.84+0200 [APP/0]      OUT 2016-10-18 11:34:21.846 DEBUG 18 --- [freshExecutor-0] c.n.d.shared.NamedConnectionPool         : [{}->http://service-discovery.local.pcfdev.io:8761] total kept alive: 0, total issued: 0, total allocated: 0 out of 200
+2016-10-18T13:34:21.84+0200 [APP/0]      OUT 2016-10-18 11:34:21.846 DEBUG 18 --- [freshExecutor-0] c.n.d.shared.NamedConnectionPool         : No free connections [{}->http://service-discovery.local.pcfdev.io:8761][null]
+2016-10-18T13:34:21.84+0200 [APP/0]      OUT 2016-10-18 11:34:21.846 DEBUG 18 --- [freshExecutor-0] c.n.d.shared.NamedConnectionPool         : Available capacity: 50 out of 50 [{}->http://service-discovery.local.pcfdev.io:8761][null]
+2016-10-18T13:34:21.84+0200 [APP/0]      OUT 2016-10-18 11:34:21.846 DEBUG 18 --- [freshExecutor-0] c.n.d.shared.NamedConnectionPool         : Creating new connection [{}->http://service-discovery.local.pcfdev.io:8761]
+2016-10-18T13:34:21.84+0200 [APP/0]      OUT 2016-10-18 11:34:21.848 DEBUG 18 --- [freshExecutor-0] c.n.d.shared.MonitoredConnectionManager  : Released connection is not reusable.
+2016-10-18T13:34:21.84+0200 [APP/0]      OUT 2016-10-18 11:34:21.848 DEBUG 18 --- [freshExecutor-0] c.n.d.shared.NamedConnectionPool         : Releasing connection [{}->http://service-discovery.local.pcfdev.io:8761][null]
+2016-10-18T13:34:21.85+0200 [APP/0]      OUT 2016-10-18 11:34:21.848 DEBUG 18 --- [freshExecutor-0] c.n.d.shared.NamedConnectionPool         : Notifying no-one, there are no waiting threads
+2016-10-18T13:34:21.85+0200 [APP/0]      OUT 2016-10-18 11:34:21.848 DEBUG 18 --- [freshExecutor-0] n.d.s.t.j.AbstractJerseyEurekaHttpClient : Jersey HTTP GET http://service-discovery.local.pcfdev.io:8761/eureka//apps/?; statusCode=N/A
+2016-10-18T13:34:21.85+0200 [APP/0]      OUT 2016-10-18 11:34:21.852 DEBUG 18 --- [tbeatExecutor-0] c.n.d.s.t.d.RetryableEurekaHttpClient    : Clearing quarantined list of size 1
+2016-10-18T13:34:21.85+0200 [APP/0]      OUT 2016-10-18 11:34:21.852 DEBUG 18 --- [tbeatExecutor-0] n.d.s.t.j.AbstractJerseyEurekaHttpClient : Created client for url: http://service-discovery.local.pcfdev.io:8761/eureka/
+2016-10-18T13:34:21.85+0200 [APP/0]      OUT 2016-10-18 11:34:21.852 ERROR 18 --- [freshExecutor-0] c.n.d.s.t.d.RedirectingEurekaHttpClient  : Request execution error
+2016-10-18T13:34:21.85+0200 [APP/0]      OUT com.sun.jersey.api.client.ClientHandlerException: java.net.ConnectException: Connection refused
+2016-10-18T13:34:21.85+0200 [APP/0]      OUT 	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187) ~[jersey-apache-client4-1.19.1.jar!/:1.19.1]
+2016-10-18T13:34:21.85+0200 [APP/0]      OUT 	at com.sun.jersey.api.client.filter.GZIPContentEncodingFilter.handle(GZIPContentEncodingFilter.java:123) ~[jersey-client-1.19.1.jar!/:1.19.1]
+2016-10-18T13:34:21.85+0200 [APP/0]      OUT 	at com.netflix.discovery.EurekaIdentityHeaderFilter.handle(EurekaIdentityHeaderFilter.java:27) ~[eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:34:21.85+0200 [APP/0]      OUT 	at com.sun.jersey.api.client.Client.handle(Client.java:652) ~[jersey-client-1.19.1.jar!/:1.19.1]
+2016-10-18T13:34:21.85+0200 [APP/0]      OUT 	at com.sun.jersey.api.client.WebResource.handle(WebResource.java:682) ~[jersey-client-1.19.1.jar!/:1.19.1]
+2016-10-18T13:34:21.85+0200 [APP/0]      OUT 	at com.sun.jersey.api.client.WebResource.access$200(WebResource.java:74) ~[jersey-client-1.19.1.jar!/:1.19.1]
+2016-10-18T13:34:21.85+0200 [APP/0]      OUT 	at com.sun.jersey.api.client.WebResource$Builder.get(WebResource.java:509) ~[jersey-client-1.19.1.jar!/:1.19.1]
+2016-10-18T13:34:21.85+0200 [APP/0]      OUT 	at com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.getApplicationsInternal(AbstractJerseyEurekaHttpClient.java:194) ~[eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:34:21.85+0200 [APP/0]      OUT 	at com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.getApplications(AbstractJerseyEurekaHttpClient.java:165) ~[eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:34:21.85+0200 [APP/0]      OUT 	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$6.execute(EurekaHttpClientDecorator.java:137) [eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:34:21.85+0200 [APP/0]      OUT 	at com.netflix.discovery.shared.transport.decorator.MetricsCollectingEurekaHttpClient.execute(MetricsCollectingEurekaHttpClient.java:73) ~[eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:34:21.85+0200 [APP/0]      OUT 	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getApplications(EurekaHttpClientDecorator.java:134) [eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:34:21.85+0200 [APP/0]      OUT 	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$6.execute(EurekaHttpClientDecorator.java:137) [eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:34:21.85+0200 [APP/0]      OUT 	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:118) ~[eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:34:21.85+0200 [APP/0]      OUT 	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:79) ~[eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:34:21.85+0200 [APP/0]      OUT 	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getApplications(EurekaHttpClientDecorator.java:134) [eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:34:21.85+0200 [APP/0]      OUT 	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$6.execute(EurekaHttpClientDecorator.java:137) [eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:34:21.85+0200 [APP/0]      OUT 	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:119) [eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:34:21.85+0200 [APP/0]      OUT 	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getApplications(EurekaHttpClientDecorator.java:134) [eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:34:21.85+0200 [APP/0]      OUT 	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$6.execute(EurekaHttpClientDecorator.java:137) [eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:34:21.85+0200 [APP/0]      OUT 	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77) [eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:34:21.85+0200 [APP/0]      OUT 	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getApplications(EurekaHttpClientDecorator.java:134) [eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:34:21.85+0200 [APP/0]      OUT 	at com.netflix.discovery.DiscoveryClient.getAndStoreFullRegistry(DiscoveryClient.java:1030) [eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:34:21.85+0200 [APP/0]      OUT 	at com.netflix.discovery.DiscoveryClient.fetchRegistry(DiscoveryClient.java:944) [eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:34:21.85+0200 [APP/0]      OUT 	at com.netflix.discovery.DiscoveryClient.refreshRegistry(DiscoveryClient.java:1468) [eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:34:21.85+0200 [APP/0]      OUT 	at com.netflix.discovery.DiscoveryClient$CacheRefreshThread.run(DiscoveryClient.java:1435) [eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:34:21.85+0200 [APP/0]      OUT 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_91]
+2016-10-18T13:34:21.85+0200 [APP/0]      OUT 	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_91]
+2016-10-18T13:34:21.85+0200 [APP/0]      OUT 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_91]
+2016-10-18T13:34:21.85+0200 [APP/0]      OUT 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_91]
+2016-10-18T13:34:21.85+0200 [APP/0]      OUT 	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_91]
+2016-10-18T13:34:21.85+0200 [APP/0]      OUT Caused by: java.net.ConnectException: Connection refused
+2016-10-18T13:34:21.85+0200 [APP/0]      OUT 	at java.net.PlainSocketImpl.socketConnect(Native Method) ~[na:1.8.0_91]
+2016-10-18T13:34:21.85+0200 [APP/0]      OUT 	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_91]
+2016-10-18T13:34:21.85+0200 [APP/0]      OUT 	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_91]
+2016-10-18T13:34:21.85+0200 [APP/0]      OUT 	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_91]
+2016-10-18T13:34:21.85+0200 [APP/0]      OUT 	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_91]
+2016-10-18T13:34:21.85+0200 [APP/0]      OUT 	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_91]
+2016-10-18T13:34:21.85+0200 [APP/0]      OUT 	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:120) ~[httpclient-4.5.2.jar!/:4.5.2]
+2016-10-18T13:34:21.85+0200 [APP/0]      OUT 	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:179) ~[httpclient-4.5.2.jar!/:4.5.2]
+2016-10-18T13:34:21.85+0200 [APP/0]      OUT 	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144) ~[httpclient-4.5.2.jar!/:4.5.2]
+2016-10-18T13:34:21.85+0200 [APP/0]      OUT 	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:134) ~[httpclient-4.5.2.jar!/:4.5.2]
+2016-10-18T13:34:21.85+0200 [APP/0]      OUT 	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:612) ~[httpclient-4.5.2.jar!/:4.5.2]
+2016-10-18T13:34:21.85+0200 [APP/0]      OUT 	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:447) ~[httpclient-4.5.2.jar!/:4.5.2]
+2016-10-18T13:34:21.85+0200 [APP/0]      OUT 	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:884) ~[httpclient-4.5.2.jar!/:4.5.2]
+2016-10-18T13:34:21.85+0200 [APP/0]      OUT 	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:117) ~[httpclient-4.5.2.jar!/:4.5.2]
+2016-10-18T13:34:21.85+0200 [APP/0]      OUT 	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55) ~[httpclient-4.5.2.jar!/:4.5.2]
+2016-10-18T13:34:21.85+0200 [APP/0]      OUT 	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:173) ~[jersey-apache-client4-1.19.1.jar!/:1.19.1]
+2016-10-18T13:34:21.85+0200 [APP/0]      OUT 	... 30 common frames omitted
+2016-10-18T13:34:21.85+0200 [APP/0]      OUT 2016-10-18 11:34:21.855  WARN 18 --- [freshExecutor-0] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failure
+2016-10-18T13:34:21.85+0200 [APP/0]      OUT 2016-10-18 11:34:21.856 ERROR 18 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_EUREKA-TEST/eaaf445f-8246-4012-777f-0bd3ca52b079 - was unable to refresh its cache! status = Cannot execute request on any known server
+2016-10-18T13:34:21.85+0200 [APP/0]      OUT com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+2016-10-18T13:34:21.85+0200 [APP/0]      OUT 	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:111) ~[eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:34:21.85+0200 [APP/0]      OUT 	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getApplications(EurekaHttpClientDecorator.java:134) ~[eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:34:21.85+0200 [APP/0]      OUT 	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$6.execute(EurekaHttpClientDecorator.java:137) ~[eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:34:21.85+0200 [APP/0]      OUT 	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77) ~[eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:34:21.85+0200 [APP/0]      OUT 	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getApplications(EurekaHttpClientDecorator.java:134) ~[eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:34:21.85+0200 [APP/0]      OUT 	at com.netflix.discovery.DiscoveryClient.getAndStoreFullRegistry(DiscoveryClient.java:1030) [eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:34:21.85+0200 [APP/0]      OUT 	at com.netflix.discovery.DiscoveryClient.fetchRegistry(DiscoveryClient.java:944) [eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:34:21.85+0200 [APP/0]      OUT 	at com.netflix.discovery.DiscoveryClient.refreshRegistry(DiscoveryClient.java:1468) [eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:34:21.85+0200 [APP/0]      OUT 	at com.netflix.discovery.DiscoveryClient$CacheRefreshThread.run(DiscoveryClient.java:1435) [eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:34:21.85+0200 [APP/0]      OUT 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_91]
+2016-10-18T13:34:21.85+0200 [APP/0]      OUT 	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_91]
+2016-10-18T13:34:21.85+0200 [APP/0]      OUT 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_91]
+2016-10-18T13:34:21.85+0200 [APP/0]      OUT 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_91]
+2016-10-18T13:34:21.85+0200 [APP/0]      OUT 	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_91]
+2016-10-18T13:34:21.85+0200 [APP/0]      OUT 2016-10-18 11:34:21.856 DEBUG 18 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Completed cache refresh task for discovery. All Apps hash code is Local region apps hashcode: null, is fetching remote regions? false 
+2016-10-18T13:34:21.85+0200 [APP/0]      OUT 2016-10-18 11:34:21.856 DEBUG 18 --- [tbeatExecutor-0] c.n.d.shared.MonitoredConnectionManager  : Get connection: {}->http://service-discovery.local.pcfdev.io:8761, timeout = 5000
+2016-10-18T13:34:21.85+0200 [APP/0]      OUT 2016-10-18 11:34:21.856 DEBUG 18 --- [tbeatExecutor-0] c.n.d.shared.NamedConnectionPool         : [{}->http://service-discovery.local.pcfdev.io:8761] total kept alive: 0, total issued: 0, total allocated: 0 out of 200
+2016-10-18T13:34:21.86+0200 [APP/0]      OUT 2016-10-18 11:34:21.859 DEBUG 18 --- [tbeatExecutor-0] c.n.d.shared.NamedConnectionPool         : No free connections [{}->http://service-discovery.local.pcfdev.io:8761][null]
+2016-10-18T13:34:21.86+0200 [APP/0]      OUT 2016-10-18 11:34:21.860 DEBUG 18 --- [tbeatExecutor-0] c.n.d.shared.NamedConnectionPool         : Available capacity: 50 out of 50 [{}->http://service-discovery.local.pcfdev.io:8761][null]
+2016-10-18T13:34:21.86+0200 [APP/0]      OUT 2016-10-18 11:34:21.860 DEBUG 18 --- [tbeatExecutor-0] c.n.d.shared.NamedConnectionPool         : Creating new connection [{}->http://service-discovery.local.pcfdev.io:8761]
+2016-10-18T13:34:21.86+0200 [APP/0]      OUT 2016-10-18 11:34:21.861 DEBUG 18 --- [tbeatExecutor-0] c.n.d.shared.MonitoredConnectionManager  : Released connection is not reusable.
+2016-10-18T13:34:21.86+0200 [APP/0]      OUT 2016-10-18 11:34:21.861 DEBUG 18 --- [tbeatExecutor-0] c.n.d.shared.NamedConnectionPool         : Releasing connection [{}->http://service-discovery.local.pcfdev.io:8761][null]
+2016-10-18T13:34:21.86+0200 [APP/0]      OUT 2016-10-18 11:34:21.861 DEBUG 18 --- [tbeatExecutor-0] c.n.d.shared.NamedConnectionPool         : Notifying no-one, there are no waiting threads
+2016-10-18T13:34:21.86+0200 [APP/0]      OUT 2016-10-18 11:34:21.861 DEBUG 18 --- [tbeatExecutor-0] n.d.s.t.j.AbstractJerseyEurekaHttpClient : Jersey HTTP PUT http://service-discovery.local.pcfdev.io:8761/eureka//apps/EUREKA-TEST/eaaf445f-8246-4012-777f-0bd3ca52b079; statusCode=N/A
+2016-10-18T13:34:21.86+0200 [APP/0]      OUT 2016-10-18 11:34:21.862 ERROR 18 --- [tbeatExecutor-0] c.n.d.s.t.d.RedirectingEurekaHttpClient  : Request execution error
+2016-10-18T13:34:21.86+0200 [APP/0]      OUT com.sun.jersey.api.client.ClientHandlerException: java.net.ConnectException: Connection refused
+2016-10-18T13:34:21.86+0200 [APP/0]      OUT 	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187) ~[jersey-apache-client4-1.19.1.jar!/:1.19.1]
+2016-10-18T13:34:21.86+0200 [APP/0]      OUT 	at com.sun.jersey.api.client.filter.GZIPContentEncodingFilter.handle(GZIPContentEncodingFilter.java:123) ~[jersey-client-1.19.1.jar!/:1.19.1]
+2016-10-18T13:34:21.86+0200 [APP/0]      OUT 	at com.netflix.discovery.EurekaIdentityHeaderFilter.handle(EurekaIdentityHeaderFilter.java:27) ~[eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:34:21.86+0200 [APP/0]      OUT 	at com.sun.jersey.api.client.Client.handle(Client.java:652) ~[jersey-client-1.19.1.jar!/:1.19.1]
+2016-10-18T13:34:21.86+0200 [APP/0]      OUT 	at com.sun.jersey.api.client.WebResource.handle(WebResource.java:682) ~[jersey-client-1.19.1.jar!/:1.19.1]
+2016-10-18T13:34:21.86+0200 [APP/0]      OUT 	at com.sun.jersey.api.client.WebResource.access$200(WebResource.java:74) ~[jersey-client-1.19.1.jar!/:1.19.1]
+2016-10-18T13:34:21.86+0200 [APP/0]      OUT 	at com.sun.jersey.api.client.WebResource$Builder.put(WebResource.java:529) ~[jersey-client-1.19.1.jar!/:1.19.1]
+2016-10-18T13:34:21.86+0200 [APP/0]      OUT 	at com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.sendHeartBeat(AbstractJerseyEurekaHttpClient.java:102) ~[eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:34:21.86+0200 [APP/0]      OUT 	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92) [eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:34:21.86+0200 [APP/0]      OUT 	at com.netflix.discovery.shared.transport.decorator.MetricsCollectingEurekaHttpClient.execute(MetricsCollectingEurekaHttpClient.java:73) ~[eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:34:21.86+0200 [APP/0]      OUT 	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89) [eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:34:21.86+0200 [APP/0]      OUT 	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92) [eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:34:21.86+0200 [APP/0]      OUT 	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:118) ~[eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:34:21.86+0200 [APP/0]      OUT 	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:79) ~[eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:34:21.86+0200 [APP/0]      OUT 	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89) [eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:34:21.86+0200 [APP/0]      OUT 	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92) [eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:34:21.86+0200 [APP/0]      OUT 	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:119) [eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:34:21.86+0200 [APP/0]      OUT 	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89) [eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:34:21.86+0200 [APP/0]      OUT 	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92) [eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:34:21.86+0200 [APP/0]      OUT 	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77) [eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:34:21.86+0200 [APP/0]      OUT 	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89) [eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:34:21.86+0200 [APP/0]      OUT 	at com.netflix.discovery.DiscoveryClient.renew(DiscoveryClient.java:832) [eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:34:21.86+0200 [APP/0]      OUT 	at com.netflix.discovery.DiscoveryClient$HeartbeatThread.run(DiscoveryClient.java:1396) [eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:34:21.86+0200 [APP/0]      OUT 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_91]
+2016-10-18T13:34:21.86+0200 [APP/0]      OUT 	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_91]
+2016-10-18T13:34:21.86+0200 [APP/0]      OUT 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_91]
+2016-10-18T13:34:21.86+0200 [APP/0]      OUT 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_91]
+2016-10-18T13:34:21.86+0200 [APP/0]      OUT 	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_91]
+2016-10-18T13:34:21.86+0200 [APP/0]      OUT Caused by: java.net.ConnectException: Connection refused
+2016-10-18T13:34:21.86+0200 [APP/0]      OUT 	at java.net.PlainSocketImpl.socketConnect(Native Method) ~[na:1.8.0_91]
+2016-10-18T13:34:21.86+0200 [APP/0]      OUT 	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_91]
+2016-10-18T13:34:21.86+0200 [APP/0]      OUT 	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_91]
+2016-10-18T13:34:21.86+0200 [APP/0]      OUT 	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_91]
+2016-10-18T13:34:21.86+0200 [APP/0]      OUT 	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_91]
+2016-10-18T13:34:21.86+0200 [APP/0]      OUT 	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_91]
+2016-10-18T13:34:21.86+0200 [APP/0]      OUT 	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:120) ~[httpclient-4.5.2.jar!/:4.5.2]
+2016-10-18T13:34:21.86+0200 [APP/0]      OUT 	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:179) ~[httpclient-4.5.2.jar!/:4.5.2]
+2016-10-18T13:34:21.86+0200 [APP/0]      OUT 	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144) ~[httpclient-4.5.2.jar!/:4.5.2]
+2016-10-18T13:34:21.86+0200 [APP/0]      OUT 	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:134) ~[httpclient-4.5.2.jar!/:4.5.2]
+2016-10-18T13:34:21.86+0200 [APP/0]      OUT 	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:612) ~[httpclient-4.5.2.jar!/:4.5.2]
+2016-10-18T13:34:21.86+0200 [APP/0]      OUT 	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:447) ~[httpclient-4.5.2.jar!/:4.5.2]
+2016-10-18T13:34:21.86+0200 [APP/0]      OUT 	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:884) ~[httpclient-4.5.2.jar!/:4.5.2]
+2016-10-18T13:34:21.86+0200 [APP/0]      OUT 	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:117) ~[httpclient-4.5.2.jar!/:4.5.2]
+2016-10-18T13:34:21.86+0200 [APP/0]      OUT 	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55) ~[httpclient-4.5.2.jar!/:4.5.2]
+2016-10-18T13:34:21.86+0200 [APP/0]      OUT 	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:173) ~[jersey-apache-client4-1.19.1.jar!/:1.19.1]
+2016-10-18T13:34:21.86+0200 [APP/0]      OUT 	... 27 common frames omitted
+2016-10-18T13:34:21.86+0200 [APP/0]      OUT 2016-10-18 11:34:21.864  WARN 18 --- [tbeatExecutor-0] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failure
+2016-10-18T13:34:21.86+0200 [APP/0]      OUT 2016-10-18 11:34:21.864 ERROR 18 --- [tbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_EUREKA-TEST/eaaf445f-8246-4012-777f-0bd3ca52b079 - was unable to send heartbeat!
+2016-10-18T13:34:21.86+0200 [APP/0]      OUT com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+2016-10-18T13:34:21.86+0200 [APP/0]      OUT 	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:111) ~[eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:34:21.86+0200 [APP/0]      OUT 	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89) ~[eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:34:21.86+0200 [APP/0]      OUT 	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92) ~[eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:34:21.86+0200 [APP/0]      OUT 	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77) ~[eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:34:21.86+0200 [APP/0]      OUT 	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89) ~[eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:34:21.86+0200 [APP/0]      OUT 	at com.netflix.discovery.DiscoveryClient.renew(DiscoveryClient.java:832) ~[eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:34:21.86+0200 [APP/0]      OUT 	at com.netflix.discovery.DiscoveryClient$HeartbeatThread.run(DiscoveryClient.java:1396) [eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:34:21.86+0200 [APP/0]      OUT 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_91]
+2016-10-18T13:34:21.86+0200 [APP/0]      OUT 	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_91]
+2016-10-18T13:34:21.86+0200 [APP/0]      OUT 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_91]
+2016-10-18T13:34:21.86+0200 [APP/0]      OUT 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_91]
+2016-10-18T13:34:21.86+0200 [APP/0]      OUT 	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_91]
+2016-10-18T13:34:21.97+0200 [APP/0]      OUT 2016-10-18 11:34:21.977  INFO 18 --- [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_EUREKA-TEST/eaaf445f-8246-4012-777f-0bd3ca52b079: registering service...
+2016-10-18T13:34:21.97+0200 [APP/0]      OUT 2016-10-18 11:34:21.978 DEBUG 18 --- [nfoReplicator-0] c.n.d.s.t.d.RetryableEurekaHttpClient    : Clearing quarantined list of size 1
+2016-10-18T13:34:21.97+0200 [APP/0]      OUT 2016-10-18 11:34:21.978 DEBUG 18 --- [nfoReplicator-0] n.d.s.t.j.AbstractJerseyEurekaHttpClient : Created client for url: http://service-discovery.local.pcfdev.io:8761/eureka/
+2016-10-18T13:34:21.98+0200 [APP/0]      OUT 2016-10-18 11:34:21.981 DEBUG 18 --- [nfoReplicator-0] c.n.d.shared.MonitoredConnectionManager  : Get connection: {}->http://service-discovery.local.pcfdev.io:8761, timeout = 5000
+2016-10-18T13:34:21.98+0200 [APP/0]      OUT 2016-10-18 11:34:21.981 DEBUG 18 --- [nfoReplicator-0] c.n.d.shared.NamedConnectionPool         : [{}->http://service-discovery.local.pcfdev.io:8761] total kept alive: 0, total issued: 0, total allocated: 0 out of 200
+2016-10-18T13:34:21.98+0200 [APP/0]      OUT 2016-10-18 11:34:21.981 DEBUG 18 --- [nfoReplicator-0] c.n.d.shared.NamedConnectionPool         : No free connections [{}->http://service-discovery.local.pcfdev.io:8761][null]
+2016-10-18T13:34:21.98+0200 [APP/0]      OUT 2016-10-18 11:34:21.981 DEBUG 18 --- [nfoReplicator-0] c.n.d.shared.NamedConnectionPool         : Available capacity: 50 out of 50 [{}->http://service-discovery.local.pcfdev.io:8761][null]
+2016-10-18T13:34:21.98+0200 [APP/0]      OUT 2016-10-18 11:34:21.981 DEBUG 18 --- [nfoReplicator-0] c.n.d.shared.NamedConnectionPool         : Creating new connection [{}->http://service-discovery.local.pcfdev.io:8761]
+2016-10-18T13:34:21.98+0200 [APP/0]      OUT 2016-10-18 11:34:21.983 DEBUG 18 --- [nfoReplicator-0] c.n.d.shared.MonitoredConnectionManager  : Released connection is not reusable.
+2016-10-18T13:34:21.98+0200 [APP/0]      OUT 2016-10-18 11:34:21.983 DEBUG 18 --- [nfoReplicator-0] c.n.d.shared.NamedConnectionPool         : Releasing connection [{}->http://service-discovery.local.pcfdev.io:8761][null]
+2016-10-18T13:34:21.98+0200 [APP/0]      OUT 2016-10-18 11:34:21.983 DEBUG 18 --- [nfoReplicator-0] c.n.d.shared.NamedConnectionPool         : Notifying no-one, there are no waiting threads
+2016-10-18T13:34:21.98+0200 [APP/0]      OUT 2016-10-18 11:34:21.983 DEBUG 18 --- [nfoReplicator-0] n.d.s.t.j.AbstractJerseyEurekaHttpClient : Jersey HTTP POST http://service-discovery.local.pcfdev.io:8761/eureka//apps/EUREKA-TEST with instance eaaf445f-8246-4012-777f-0bd3ca52b079; statusCode=N/A
+2016-10-18T13:34:21.98+0200 [APP/0]      OUT 2016-10-18 11:34:21.985 ERROR 18 --- [nfoReplicator-0] c.n.d.s.t.d.RedirectingEurekaHttpClient  : Request execution error
+2016-10-18T13:34:21.98+0200 [APP/0]      OUT com.sun.jersey.api.client.ClientHandlerException: java.net.ConnectException: Connection refused
+2016-10-18T13:34:21.98+0200 [APP/0]      OUT 	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187) ~[jersey-apache-client4-1.19.1.jar!/:1.19.1]
+2016-10-18T13:34:21.98+0200 [APP/0]      OUT 	at com.sun.jersey.api.client.filter.GZIPContentEncodingFilter.handle(GZIPContentEncodingFilter.java:123) ~[jersey-client-1.19.1.jar!/:1.19.1]
+2016-10-18T13:34:21.98+0200 [APP/0]      OUT 	at com.netflix.discovery.EurekaIdentityHeaderFilter.handle(EurekaIdentityHeaderFilter.java:27) ~[eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:34:21.98+0200 [APP/0]      OUT 	at com.sun.jersey.api.client.Client.handle(Client.java:652) ~[jersey-client-1.19.1.jar!/:1.19.1]
+2016-10-18T13:34:21.98+0200 [APP/0]      OUT 	at com.sun.jersey.api.client.WebResource.handle(WebResource.java:682) ~[jersey-client-1.19.1.jar!/:1.19.1]
+2016-10-18T13:34:21.98+0200 [APP/0]      OUT 	at com.sun.jersey.api.client.WebResource.access$200(WebResource.java:74) ~[jersey-client-1.19.1.jar!/:1.19.1]
+2016-10-18T13:34:21.98+0200 [APP/0]      OUT 	at com.sun.jersey.api.client.WebResource$Builder.post(WebResource.java:570) ~[jersey-client-1.19.1.jar!/:1.19.1]
+2016-10-18T13:34:21.98+0200 [APP/0]      OUT 	at com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.register(AbstractJerseyEurekaHttpClient.java:56) ~[eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:34:21.98+0200 [APP/0]      OUT 	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59) [eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:34:21.98+0200 [APP/0]      OUT 	at com.netflix.discovery.shared.transport.decorator.MetricsCollectingEurekaHttpClient.execute(MetricsCollectingEurekaHttpClient.java:73) ~[eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:34:21.98+0200 [APP/0]      OUT 	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56) [eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:34:21.98+0200 [APP/0]      OUT 	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59) [eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:34:21.98+0200 [APP/0]      OUT 	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:118) ~[eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:34:21.98+0200 [APP/0]      OUT 	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:79) ~[eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:34:21.98+0200 [APP/0]      OUT 	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56) [eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:34:21.98+0200 [APP/0]      OUT 	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59) [eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:34:21.98+0200 [APP/0]      OUT 	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:119) [eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:34:21.98+0200 [APP/0]      OUT 	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56) [eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:34:21.98+0200 [APP/0]      OUT 	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59) [eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:34:21.98+0200 [APP/0]      OUT 	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77) [eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:34:21.98+0200 [APP/0]      OUT 	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56) [eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:34:21.98+0200 [APP/0]      OUT 	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:815) [eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:34:21.98+0200 [APP/0]      OUT 	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:104) [eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:34:21.98+0200 [APP/0]      OUT 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_91]
+2016-10-18T13:34:21.98+0200 [APP/0]      OUT 	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_91]
+2016-10-18T13:34:21.98+0200 [APP/0]      OUT 	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180) [na:1.8.0_91]
+2016-10-18T13:34:21.98+0200 [APP/0]      OUT 	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293) [na:1.8.0_91]
+2016-10-18T13:34:21.98+0200 [APP/0]      OUT 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_91]
+2016-10-18T13:34:21.98+0200 [APP/0]      OUT 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_91]
+2016-10-18T13:34:21.98+0200 [APP/0]      OUT 	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_91]
+2016-10-18T13:34:21.98+0200 [APP/0]      OUT Caused by: java.net.ConnectException: Connection refused
+2016-10-18T13:34:21.98+0200 [APP/0]      OUT 	at java.net.PlainSocketImpl.socketConnect(Native Method) ~[na:1.8.0_91]
+2016-10-18T13:34:21.98+0200 [APP/0]      OUT 	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_91]
+2016-10-18T13:34:21.98+0200 [APP/0]      OUT 	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_91]
+2016-10-18T13:34:21.98+0200 [APP/0]      OUT 	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_91]
+2016-10-18T13:34:21.98+0200 [APP/0]      OUT 	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_91]
+2016-10-18T13:34:21.98+0200 [APP/0]      OUT 	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_91]
+2016-10-18T13:34:21.98+0200 [APP/0]      OUT 	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:120) ~[httpclient-4.5.2.jar!/:4.5.2]
+2016-10-18T13:34:21.98+0200 [APP/0]      OUT 	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:179) ~[httpclient-4.5.2.jar!/:4.5.2]
+2016-10-18T13:34:21.98+0200 [APP/0]      OUT 	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144) ~[httpclient-4.5.2.jar!/:4.5.2]
+2016-10-18T13:34:21.98+0200 [APP/0]      OUT 	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:134) ~[httpclient-4.5.2.jar!/:4.5.2]
+2016-10-18T13:34:21.98+0200 [APP/0]      OUT 	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:612) ~[httpclient-4.5.2.jar!/:4.5.2]
+2016-10-18T13:34:21.98+0200 [APP/0]      OUT 	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:447) ~[httpclient-4.5.2.jar!/:4.5.2]
+2016-10-18T13:34:21.98+0200 [APP/0]      OUT 	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:884) ~[httpclient-4.5.2.jar!/:4.5.2]
+2016-10-18T13:34:21.98+0200 [APP/0]      OUT 	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:117) ~[httpclient-4.5.2.jar!/:4.5.2]
+2016-10-18T13:34:21.98+0200 [APP/0]      OUT 	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55) ~[httpclient-4.5.2.jar!/:4.5.2]
+2016-10-18T13:34:21.98+0200 [APP/0]      OUT 	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:173) ~[jersey-apache-client4-1.19.1.jar!/:1.19.1]
+2016-10-18T13:34:21.98+0200 [APP/0]      OUT 	... 29 common frames omitted
+2016-10-18T13:34:21.98+0200 [APP/0]      OUT 2016-10-18 11:34:21.985  WARN 18 --- [nfoReplicator-0] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failure
+2016-10-18T13:34:21.99+0200 [APP/0]      OUT 2016-10-18 11:34:21.987  WARN 18 --- [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_EUREKA-TEST/eaaf445f-8246-4012-777f-0bd3ca52b079 - registration failed Cannot execute request on any known server
+2016-10-18T13:34:21.99+0200 [APP/0]      OUT com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+2016-10-18T13:34:21.99+0200 [APP/0]      OUT 	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:111) ~[eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:34:21.99+0200 [APP/0]      OUT 	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56) ~[eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:34:21.99+0200 [APP/0]      OUT 	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59) ~[eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:34:21.99+0200 [APP/0]      OUT 	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77) ~[eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:34:21.99+0200 [APP/0]      OUT 	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56) ~[eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:34:21.99+0200 [APP/0]      OUT 	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:815) ~[eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:34:21.99+0200 [APP/0]      OUT 	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:104) [eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:34:21.99+0200 [APP/0]      OUT 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_91]
+2016-10-18T13:34:21.99+0200 [APP/0]      OUT 	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_91]
+2016-10-18T13:34:21.99+0200 [APP/0]      OUT 	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180) [na:1.8.0_91]
+2016-10-18T13:34:21.99+0200 [APP/0]      OUT 	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293) [na:1.8.0_91]
+2016-10-18T13:34:21.99+0200 [APP/0]      OUT 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_91]
+2016-10-18T13:34:21.99+0200 [APP/0]      OUT 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_91]
+2016-10-18T13:34:21.99+0200 [APP/0]      OUT 	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_91]
+2016-10-18T13:34:21.99+0200 [APP/0]      OUT 2016-10-18 11:34:21.988  WARN 18 --- [nfoReplicator-0] c.n.discovery.InstanceInfoReplicator     : There was a problem with the instance info replicator
+2016-10-18T13:34:21.99+0200 [APP/0]      OUT com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+2016-10-18T13:34:21.99+0200 [APP/0]      OUT 	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:111) ~[eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:34:21.99+0200 [APP/0]      OUT 	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56) ~[eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:34:21.99+0200 [APP/0]      OUT 	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59) ~[eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:34:21.99+0200 [APP/0]      OUT 	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77) ~[eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:34:21.99+0200 [APP/0]      OUT 	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56) ~[eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:34:21.99+0200 [APP/0]      OUT 	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:815) ~[eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:34:21.99+0200 [APP/0]      OUT 	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:104) ~[eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:34:21.99+0200 [APP/0]      OUT 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_91]
+2016-10-18T13:34:21.99+0200 [APP/0]      OUT 	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_91]
+2016-10-18T13:34:21.99+0200 [APP/0]      OUT 	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180) [na:1.8.0_91]
+2016-10-18T13:34:21.99+0200 [APP/0]      OUT 	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293) [na:1.8.0_91]
+2016-10-18T13:34:21.99+0200 [APP/0]      OUT 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_91]
+2016-10-18T13:34:21.99+0200 [APP/0]      OUT 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_91]
+2016-10-18T13:34:21.99+0200 [APP/0]      OUT 	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_91]
+2016-10-18T13:34:51.68+0200 [APP/0]      OUT 2016-10-18 11:34:51.687 DEBUG 18 --- [t-Conn-Cleaner2] c.n.d.shared.MonitoredConnectionManager  : Closing connections idle longer than 30000 SECONDS
+2016-10-18T13:34:51.68+0200 [APP/0]      OUT 2016-10-18 11:34:51.687 DEBUG 18 --- [t-Conn-Cleaner2] c.n.d.shared.NamedConnectionPool         : Closing connections idle longer than 30000 SECONDS
+2016-10-18T13:34:51.68+0200 [APP/0]      OUT 2016-10-18 11:34:51.687 DEBUG 18 --- [t-Conn-Cleaner2] c.n.d.shared.MonitoredConnectionManager  : Closing connections idle longer than -1 SECONDS
+2016-10-18T13:34:51.68+0200 [APP/0]      OUT 2016-10-18 11:34:51.687 DEBUG 18 --- [t-Conn-Cleaner2] c.n.d.shared.NamedConnectionPool         : Closing connections idle longer than 0 SECONDS
+2016-10-18T13:34:51.85+0200 [APP/0]      OUT 2016-10-18 11:34:51.857  INFO 18 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2016-10-18T13:34:51.85+0200 [APP/0]      OUT 2016-10-18 11:34:51.857  INFO 18 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2016-10-18T13:34:51.85+0200 [APP/0]      OUT 2016-10-18 11:34:51.858  INFO 18 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2016-10-18T13:34:51.85+0200 [APP/0]      OUT 2016-10-18 11:34:51.857  INFO 18 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2016-10-18T13:34:51.85+0200 [APP/0]      OUT 2016-10-18 11:34:51.858  INFO 18 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2016-10-18T13:34:51.85+0200 [APP/0]      OUT 2016-10-18 11:34:51.858  INFO 18 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2016-10-18T13:34:51.86+0200 [APP/0]      OUT 2016-10-18 11:34:51.858  INFO 18 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2016-10-18T13:34:51.86+0200 [APP/0]      OUT 2016-10-18 11:34:51.858 DEBUG 18 --- [freshExecutor-0] c.n.d.s.t.d.RetryableEurekaHttpClient    : Clearing quarantined list of size 1
+2016-10-18T13:34:51.86+0200 [APP/0]      OUT 2016-10-18 11:34:51.858 DEBUG 18 --- [freshExecutor-0] n.d.s.t.j.AbstractJerseyEurekaHttpClient : Created client for url: http://service-discovery.local.pcfdev.io:8761/eureka/
+2016-10-18T13:34:51.86+0200 [APP/0]      OUT 2016-10-18 11:34:51.859 DEBUG 18 --- [freshExecutor-0] c.n.d.shared.MonitoredConnectionManager  : Get connection: {}->http://service-discovery.local.pcfdev.io:8761, timeout = 5000
+2016-10-18T13:34:51.86+0200 [APP/0]      OUT 2016-10-18 11:34:51.860 DEBUG 18 --- [freshExecutor-0] c.n.d.shared.NamedConnectionPool         : [{}->http://service-discovery.local.pcfdev.io:8761] total kept alive: 0, total issued: 0, total allocated: 0 out of 200
+2016-10-18T13:34:51.86+0200 [APP/0]      OUT 2016-10-18 11:34:51.860 DEBUG 18 --- [freshExecutor-0] c.n.d.shared.NamedConnectionPool         : No free connections [{}->http://service-discovery.local.pcfdev.io:8761][null]
+2016-10-18T13:34:51.86+0200 [APP/0]      OUT 2016-10-18 11:34:51.860 DEBUG 18 --- [freshExecutor-0] c.n.d.shared.NamedConnectionPool         : Available capacity: 50 out of 50 [{}->http://service-discovery.local.pcfdev.io:8761][null]
+2016-10-18T13:34:51.86+0200 [APP/0]      OUT 2016-10-18 11:34:51.862 DEBUG 18 --- [freshExecutor-0] c.n.d.shared.NamedConnectionPool         : Creating new connection [{}->http://service-discovery.local.pcfdev.io:8761]
+2016-10-18T13:34:51.86+0200 [APP/0]      OUT 2016-10-18 11:34:51.866 DEBUG 18 --- [tbeatExecutor-0] c.n.d.s.t.d.RetryableEurekaHttpClient    : Clearing quarantined list of size 1
+2016-10-18T13:34:51.86+0200 [APP/0]      OUT 2016-10-18 11:34:51.867 DEBUG 18 --- [tbeatExecutor-0] n.d.s.t.j.AbstractJerseyEurekaHttpClient : Created client for url: http://service-discovery.local.pcfdev.io:8761/eureka/
+2016-10-18T13:34:51.86+0200 [APP/0]      OUT 2016-10-18 11:34:51.868 DEBUG 18 --- [tbeatExecutor-0] c.n.d.shared.MonitoredConnectionManager  : Get connection: {}->http://service-discovery.local.pcfdev.io:8761, timeout = 5000
+2016-10-18T13:34:51.86+0200 [APP/0]      OUT 2016-10-18 11:34:51.868 DEBUG 18 --- [tbeatExecutor-0] c.n.d.shared.NamedConnectionPool         : [{}->http://service-discovery.local.pcfdev.io:8761] total kept alive: 0, total issued: 1, total allocated: 1 out of 200
+2016-10-18T13:34:51.86+0200 [APP/0]      OUT 2016-10-18 11:34:51.868 DEBUG 18 --- [tbeatExecutor-0] c.n.d.shared.NamedConnectionPool         : No free connections [{}->http://service-discovery.local.pcfdev.io:8761][null]
+2016-10-18T13:34:51.86+0200 [APP/0]      OUT 2016-10-18 11:34:51.869 DEBUG 18 --- [tbeatExecutor-0] c.n.d.shared.NamedConnectionPool         : Available capacity: 49 out of 50 [{}->http://service-discovery.local.pcfdev.io:8761][null]
+2016-10-18T13:34:51.86+0200 [APP/0]      OUT 2016-10-18 11:34:51.869 DEBUG 18 --- [tbeatExecutor-0] c.n.d.shared.NamedConnectionPool         : Creating new connection [{}->http://service-discovery.local.pcfdev.io:8761]
+2016-10-18T13:34:51.87+0200 [APP/0]      OUT 2016-10-18 11:34:51.870 DEBUG 18 --- [freshExecutor-0] c.n.d.shared.MonitoredConnectionManager  : Released connection is not reusable.
+2016-10-18T13:34:51.87+0200 [APP/0]      OUT 2016-10-18 11:34:51.871 DEBUG 18 --- [tbeatExecutor-0] c.n.d.shared.MonitoredConnectionManager  : Released connection is not reusable.
+2016-10-18T13:34:51.87+0200 [APP/0]      OUT 2016-10-18 11:34:51.871 DEBUG 18 --- [freshExecutor-0] c.n.d.shared.NamedConnectionPool         : Releasing connection [{}->http://service-discovery.local.pcfdev.io:8761][null]
+2016-10-18T13:34:51.87+0200 [APP/0]      OUT 2016-10-18 11:34:51.871 DEBUG 18 --- [freshExecutor-0] c.n.d.shared.NamedConnectionPool         : Notifying no-one, there are no waiting threads
+2016-10-18T13:34:51.87+0200 [APP/0]      OUT 2016-10-18 11:34:51.872 DEBUG 18 --- [tbeatExecutor-0] c.n.d.shared.NamedConnectionPool         : Releasing connection [{}->http://service-discovery.local.pcfdev.io:8761][null]
+2016-10-18T13:34:51.87+0200 [APP/0]      OUT 2016-10-18 11:34:51.872 DEBUG 18 --- [freshExecutor-0] n.d.s.t.j.AbstractJerseyEurekaHttpClient : Jersey HTTP GET http://service-discovery.local.pcfdev.io:8761/eureka//apps/?; statusCode=N/A
+2016-10-18T13:34:51.87+0200 [APP/0]      OUT 2016-10-18 11:34:51.873 DEBUG 18 --- [tbeatExecutor-0] c.n.d.shared.NamedConnectionPool         : Notifying no-one, there are no waiting threads
+2016-10-18T13:34:51.87+0200 [APP/0]      OUT 2016-10-18 11:34:51.874 DEBUG 18 --- [tbeatExecutor-0] n.d.s.t.j.AbstractJerseyEurekaHttpClient : Jersey HTTP PUT http://service-discovery.local.pcfdev.io:8761/eureka//apps/EUREKA-TEST/eaaf445f-8246-4012-777f-0bd3ca52b079; statusCode=N/A
+2016-10-18T13:34:51.87+0200 [APP/0]      OUT 2016-10-18 11:34:51.875 ERROR 18 --- [freshExecutor-0] c.n.d.s.t.d.RedirectingEurekaHttpClient  : Request execution error
+2016-10-18T13:34:51.87+0200 [APP/0]      OUT com.sun.jersey.api.client.ClientHandlerException: java.net.ConnectException: Connection refused
+2016-10-18T13:34:51.87+0200 [APP/0]      OUT 	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187) ~[jersey-apache-client4-1.19.1.jar!/:1.19.1]
+2016-10-18T13:34:51.87+0200 [APP/0]      OUT 	at com.sun.jersey.api.client.filter.GZIPContentEncodingFilter.handle(GZIPContentEncodingFilter.java:123) ~[jersey-client-1.19.1.jar!/:1.19.1]
+2016-10-18T13:34:51.87+0200 [APP/0]      OUT 	at com.netflix.discovery.EurekaIdentityHeaderFilter.handle(EurekaIdentityHeaderFilter.java:27) ~[eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:34:51.87+0200 [APP/0]      OUT 	at com.sun.jersey.api.client.Client.handle(Client.java:652) ~[jersey-client-1.19.1.jar!/:1.19.1]
+2016-10-18T13:34:51.87+0200 [APP/0]      OUT 	at com.sun.jersey.api.client.WebResource.handle(WebResource.java:682) ~[jersey-client-1.19.1.jar!/:1.19.1]
+2016-10-18T13:34:51.87+0200 [APP/0]      OUT 	at com.sun.jersey.api.client.WebResource.access$200(WebResource.java:74) ~[jersey-client-1.19.1.jar!/:1.19.1]
+2016-10-18T13:34:51.87+0200 [APP/0]      OUT 	at com.sun.jersey.api.client.WebResource$Builder.get(WebResource.java:509) ~[jersey-client-1.19.1.jar!/:1.19.1]
+2016-10-18T13:34:51.87+0200 [APP/0]      OUT 	at com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.getApplicationsInternal(AbstractJerseyEurekaHttpClient.java:194) ~[eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:34:51.87+0200 [APP/0]      OUT 	at com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.getApplications(AbstractJerseyEurekaHttpClient.java:165) ~[eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:34:51.87+0200 [APP/0]      OUT 	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$6.execute(EurekaHttpClientDecorator.java:137) [eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:34:51.87+0200 [APP/0]      OUT 	at com.netflix.discovery.shared.transport.decorator.MetricsCollectingEurekaHttpClient.execute(MetricsCollectingEurekaHttpClient.java:73) ~[eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:34:51.87+0200 [APP/0]      OUT 	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getApplications(EurekaHttpClientDecorator.java:134) [eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:34:51.87+0200 [APP/0]      OUT 	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$6.execute(EurekaHttpClientDecorator.java:137) [eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:34:51.87+0200 [APP/0]      OUT 	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:118) ~[eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:34:51.87+0200 [APP/0]      OUT 	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:79) ~[eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:34:51.87+0200 [APP/0]      OUT 	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getApplications(EurekaHttpClientDecorator.java:134) [eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:34:51.87+0200 [APP/0]      OUT 	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$6.execute(EurekaHttpClientDecorator.java:137) [eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:34:51.87+0200 [APP/0]      OUT 	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:119) [eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:34:51.87+0200 [APP/0]      OUT 	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getApplications(EurekaHttpClientDecorator.java:134) [eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:34:51.87+0200 [APP/0]      OUT 	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$6.execute(EurekaHttpClientDecorator.java:137) [eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:34:51.87+0200 [APP/0]      OUT 	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77) [eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:34:51.87+0200 [APP/0]      OUT 	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getApplications(EurekaHttpClientDecorator.java:134) [eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:34:51.87+0200 [APP/0]      OUT 	at com.netflix.discovery.DiscoveryClient.getAndStoreFullRegistry(DiscoveryClient.java:1030) [eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:34:51.87+0200 [APP/0]      OUT 	at com.netflix.discovery.DiscoveryClient.fetchRegistry(DiscoveryClient.java:944) [eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:34:51.87+0200 [APP/0]      OUT 	at com.netflix.discovery.DiscoveryClient.refreshRegistry(DiscoveryClient.java:1468) [eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:34:51.87+0200 [APP/0]      OUT 	at com.netflix.discovery.DiscoveryClient$CacheRefreshThread.run(DiscoveryClient.java:1435) [eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:34:51.87+0200 [APP/0]      OUT 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_91]
+2016-10-18T13:34:51.87+0200 [APP/0]      OUT 	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_91]
+2016-10-18T13:34:51.87+0200 [APP/0]      OUT 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_91]
+2016-10-18T13:34:51.87+0200 [APP/0]      OUT 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_91]
+2016-10-18T13:34:51.87+0200 [APP/0]      OUT 	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_91]
+2016-10-18T13:34:51.87+0200 [APP/0]      OUT Caused by: java.net.ConnectException: Connection refused
+2016-10-18T13:34:51.87+0200 [APP/0]      OUT 	at java.net.PlainSocketImpl.socketConnect(Native Method) ~[na:1.8.0_91]
+2016-10-18T13:34:51.87+0200 [APP/0]      OUT 	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_91]
+2016-10-18T13:34:51.87+0200 [APP/0]      OUT 	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_91]
+2016-10-18T13:34:51.87+0200 [APP/0]      OUT 	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_91]
+2016-10-18T13:34:51.87+0200 [APP/0]      OUT 	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_91]
+2016-10-18T13:34:51.87+0200 [APP/0]      OUT 	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_91]
+2016-10-18T13:34:51.87+0200 [APP/0]      OUT 	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:120) ~[httpclient-4.5.2.jar!/:4.5.2]
+2016-10-18T13:34:51.87+0200 [APP/0]      OUT 	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:179) ~[httpclient-4.5.2.jar!/:4.5.2]
+2016-10-18T13:34:51.87+0200 [APP/0]      OUT 	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144) ~[httpclient-4.5.2.jar!/:4.5.2]
+2016-10-18T13:34:51.87+0200 [APP/0]      OUT 	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:134) ~[httpclient-4.5.2.jar!/:4.5.2]
+2016-10-18T13:34:51.87+0200 [APP/0]      OUT 	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:612) ~[httpclient-4.5.2.jar!/:4.5.2]
+2016-10-18T13:34:51.87+0200 [APP/0]      OUT 	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:447) ~[httpclient-4.5.2.jar!/:4.5.2]
+2016-10-18T13:34:51.87+0200 [APP/0]      OUT 	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:884) ~[httpclient-4.5.2.jar!/:4.5.2]
+2016-10-18T13:34:51.87+0200 [APP/0]      OUT 	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:117) ~[httpclient-4.5.2.jar!/:4.5.2]
+2016-10-18T13:34:51.87+0200 [APP/0]      OUT 	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55) ~[httpclient-4.5.2.jar!/:4.5.2]
+2016-10-18T13:34:51.87+0200 [APP/0]      OUT 	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:173) ~[jersey-apache-client4-1.19.1.jar!/:1.19.1]
+2016-10-18T13:34:51.87+0200 [APP/0]      OUT 	... 30 common frames omitted
+2016-10-18T13:34:51.87+0200 [APP/0]      OUT 2016-10-18 11:34:51.877  WARN 18 --- [freshExecutor-0] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failure
+2016-10-18T13:34:51.87+0200 [APP/0]      OUT 2016-10-18 11:34:51.877 ERROR 18 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_EUREKA-TEST/eaaf445f-8246-4012-777f-0bd3ca52b079 - was unable to refresh its cache! status = Cannot execute request on any known server
+2016-10-18T13:34:51.87+0200 [APP/0]      OUT com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+2016-10-18T13:34:51.87+0200 [APP/0]      OUT 	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:111) ~[eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:34:51.87+0200 [APP/0]      OUT 	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getApplications(EurekaHttpClientDecorator.java:134) ~[eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:34:51.87+0200 [APP/0]      OUT 	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$6.execute(EurekaHttpClientDecorator.java:137) ~[eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:34:51.87+0200 [APP/0]      OUT 	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77) ~[eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:34:51.87+0200 [APP/0]      OUT 	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getApplications(EurekaHttpClientDecorator.java:134) ~[eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:34:51.87+0200 [APP/0]      OUT 	at com.netflix.discovery.DiscoveryClient.getAndStoreFullRegistry(DiscoveryClient.java:1030) [eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:34:51.87+0200 [APP/0]      OUT 	at com.netflix.discovery.DiscoveryClient.fetchRegistry(DiscoveryClient.java:944) [eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:34:51.87+0200 [APP/0]      OUT 	at com.netflix.discovery.DiscoveryClient.refreshRegistry(DiscoveryClient.java:1468) [eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:34:51.87+0200 [APP/0]      OUT 	at com.netflix.discovery.DiscoveryClient$CacheRefreshThread.run(DiscoveryClient.java:1435) [eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:34:51.87+0200 [APP/0]      OUT 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_91]
+2016-10-18T13:34:51.87+0200 [APP/0]      OUT 	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_91]
+2016-10-18T13:34:51.87+0200 [APP/0]      OUT 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_91]
+2016-10-18T13:34:51.87+0200 [APP/0]      OUT 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_91]
+2016-10-18T13:34:51.87+0200 [APP/0]      OUT 	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_91]
+2016-10-18T13:34:51.87+0200 [APP/0]      OUT 2016-10-18 11:34:51.877 ERROR 18 --- [tbeatExecutor-0] c.n.d.s.t.d.RedirectingEurekaHttpClient  : Request execution error
+2016-10-18T13:34:51.87+0200 [APP/0]      OUT com.sun.jersey.api.client.ClientHandlerException: java.net.ConnectException: Connection refused
+2016-10-18T13:34:51.87+0200 [APP/0]      OUT 	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187) ~[jersey-apache-client4-1.19.1.jar!/:1.19.1]
+2016-10-18T13:34:51.87+0200 [APP/0]      OUT 	at com.sun.jersey.api.client.filter.GZIPContentEncodingFilter.handle(GZIPContentEncodingFilter.java:123) ~[jersey-client-1.19.1.jar!/:1.19.1]
+2016-10-18T13:34:51.87+0200 [APP/0]      OUT 	at com.netflix.discovery.EurekaIdentityHeaderFilter.handle(EurekaIdentityHeaderFilter.java:27) ~[eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:34:51.87+0200 [APP/0]      OUT 	at com.sun.jersey.api.client.Client.handle(Client.java:652) ~[jersey-client-1.19.1.jar!/:1.19.1]
+2016-10-18T13:34:51.87+0200 [APP/0]      OUT 	at com.sun.jersey.api.client.WebResource.handle(WebResource.java:682) ~[jersey-client-1.19.1.jar!/:1.19.1]
+2016-10-18T13:34:51.87+0200 [APP/0]      OUT 	at com.sun.jersey.api.client.WebResource.access$200(WebResource.java:74) ~[jersey-client-1.19.1.jar!/:1.19.1]
+2016-10-18T13:34:51.87+0200 [APP/0]      OUT 	at com.sun.jersey.api.client.WebResource$Builder.put(WebResource.java:529) ~[jersey-client-1.19.1.jar!/:1.19.1]
+2016-10-18T13:34:51.87+0200 [APP/0]      OUT 	at com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.sendHeartBeat(AbstractJerseyEurekaHttpClient.java:102) ~[eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:34:51.87+0200 [APP/0]      OUT 	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92) [eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:34:51.87+0200 [APP/0]      OUT 	at com.netflix.discovery.shared.transport.decorator.MetricsCollectingEurekaHttpClient.execute(MetricsCollectingEurekaHttpClient.java:73) ~[eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:34:51.87+0200 [APP/0]      OUT 	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89) [eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:34:51.87+0200 [APP/0]      OUT 	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92) [eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:34:51.87+0200 [APP/0]      OUT 	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:118) ~[eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:34:51.87+0200 [APP/0]      OUT 	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:79) ~[eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:34:51.87+0200 [APP/0]      OUT 	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89) [eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:34:51.87+0200 [APP/0]      OUT 	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92) [eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:34:51.87+0200 [APP/0]      OUT 	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:119) [eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:34:51.87+0200 [APP/0]      OUT 	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89) [eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:34:51.87+0200 [APP/0]      OUT 	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92) [eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:34:51.87+0200 [APP/0]      OUT 	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77) [eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:34:51.87+0200 [APP/0]      OUT 	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89) [eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:34:51.87+0200 [APP/0]      OUT 	at com.netflix.discovery.DiscoveryClient.renew(DiscoveryClient.java:832) [eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:34:51.87+0200 [APP/0]      OUT 	at com.netflix.discovery.DiscoveryClient$HeartbeatThread.run(DiscoveryClient.java:1396) [eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:34:51.87+0200 [APP/0]      OUT 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_91]
+2016-10-18T13:34:51.87+0200 [APP/0]      OUT 	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_91]
+2016-10-18T13:34:51.87+0200 [APP/0]      OUT 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_91]
+2016-10-18T13:34:51.87+0200 [APP/0]      OUT 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_91]
+2016-10-18T13:34:51.87+0200 [APP/0]      OUT 	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_91]
+2016-10-18T13:34:51.87+0200 [APP/0]      OUT Caused by: java.net.ConnectException: Connection refused
+2016-10-18T13:34:51.87+0200 [APP/0]      OUT 	at java.net.PlainSocketImpl.socketConnect(Native Method) ~[na:1.8.0_91]
+2016-10-18T13:34:51.87+0200 [APP/0]      OUT 	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_91]
+2016-10-18T13:34:51.87+0200 [APP/0]      OUT 	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_91]
+2016-10-18T13:34:51.87+0200 [APP/0]      OUT 	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_91]
+2016-10-18T13:34:51.87+0200 [APP/0]      OUT 	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_91]
+2016-10-18T13:34:51.87+0200 [APP/0]      OUT 	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_91]
+2016-10-18T13:34:51.87+0200 [APP/0]      OUT 	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:120) ~[httpclient-4.5.2.jar!/:4.5.2]
+2016-10-18T13:34:51.87+0200 [APP/0]      OUT 	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:179) ~[httpclient-4.5.2.jar!/:4.5.2]
+2016-10-18T13:34:51.87+0200 [APP/0]      OUT 	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144) ~[httpclient-4.5.2.jar!/:4.5.2]
+2016-10-18T13:34:51.87+0200 [APP/0]      OUT 	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:134) ~[httpclient-4.5.2.jar!/:4.5.2]
+2016-10-18T13:34:51.87+0200 [APP/0]      OUT 	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:612) ~[httpclient-4.5.2.jar!/:4.5.2]
+2016-10-18T13:34:51.87+0200 [APP/0]      OUT 	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:447) ~[httpclient-4.5.2.jar!/:4.5.2]
+2016-10-18T13:34:51.87+0200 [APP/0]      OUT 	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:884) ~[httpclient-4.5.2.jar!/:4.5.2]
+2016-10-18T13:34:51.87+0200 [APP/0]      OUT 	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:117) ~[httpclient-4.5.2.jar!/:4.5.2]
+2016-10-18T13:34:51.88+0200 [APP/0]      OUT 	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55) ~[httpclient-4.5.2.jar!/:4.5.2]
+2016-10-18T13:34:51.88+0200 [APP/0]      OUT 	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:173) ~[jersey-apache-client4-1.19.1.jar!/:1.19.1]
+2016-10-18T13:34:51.88+0200 [APP/0]      OUT 	... 27 common frames omitted
+2016-10-18T13:34:51.88+0200 [APP/0]      OUT 2016-10-18 11:34:51.880  WARN 18 --- [tbeatExecutor-0] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failure
+2016-10-18T13:34:51.88+0200 [APP/0]      OUT 2016-10-18 11:34:51.880 DEBUG 18 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Completed cache refresh task for discovery. All Apps hash code is Local region apps hashcode: null, is fetching remote regions? false 
+2016-10-18T13:34:51.88+0200 [APP/0]      OUT 2016-10-18 11:34:51.883 ERROR 18 --- [tbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_EUREKA-TEST/eaaf445f-8246-4012-777f-0bd3ca52b079 - was unable to send heartbeat!
+2016-10-18T13:34:51.88+0200 [APP/0]      OUT com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+2016-10-18T13:34:51.88+0200 [APP/0]      OUT 	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:111) ~[eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:34:51.88+0200 [APP/0]      OUT 	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89) ~[eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:34:51.88+0200 [APP/0]      OUT 	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92) ~[eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:34:51.88+0200 [APP/0]      OUT 	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77) ~[eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:34:51.88+0200 [APP/0]      OUT 	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89) ~[eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:34:51.88+0200 [APP/0]      OUT 	at com.netflix.discovery.DiscoveryClient.renew(DiscoveryClient.java:832) ~[eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:34:51.88+0200 [APP/0]      OUT 	at com.netflix.discovery.DiscoveryClient$HeartbeatThread.run(DiscoveryClient.java:1396) [eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:34:51.88+0200 [APP/0]      OUT 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_91]
+2016-10-18T13:34:51.88+0200 [APP/0]      OUT 	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_91]
+2016-10-18T13:34:51.88+0200 [APP/0]      OUT 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_91]
+2016-10-18T13:34:51.88+0200 [APP/0]      OUT 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_91]
+2016-10-18T13:34:51.88+0200 [APP/0]      OUT 	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_91]
+2016-10-18T13:34:51.98+0200 [APP/0]      OUT 2016-10-18 11:34:51.989  INFO 18 --- [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_EUREKA-TEST/eaaf445f-8246-4012-777f-0bd3ca52b079: registering service...
+2016-10-18T13:34:51.99+0200 [APP/0]      OUT 2016-10-18 11:34:51.989 DEBUG 18 --- [nfoReplicator-0] c.n.d.s.t.d.RetryableEurekaHttpClient    : Clearing quarantined list of size 1
+2016-10-18T13:34:51.99+0200 [APP/0]      OUT 2016-10-18 11:34:51.989 DEBUG 18 --- [nfoReplicator-0] n.d.s.t.j.AbstractJerseyEurekaHttpClient : Created client for url: http://service-discovery.local.pcfdev.io:8761/eureka/
+2016-10-18T13:34:51.99+0200 [APP/0]      OUT 2016-10-18 11:34:51.991 DEBUG 18 --- [nfoReplicator-0] c.n.d.shared.MonitoredConnectionManager  : Get connection: {}->http://service-discovery.local.pcfdev.io:8761, timeout = 5000
+2016-10-18T13:34:51.99+0200 [APP/0]      OUT 2016-10-18 11:34:51.992 DEBUG 18 --- [nfoReplicator-0] c.n.d.shared.NamedConnectionPool         : [{}->http://service-discovery.local.pcfdev.io:8761] total kept alive: 0, total issued: 0, total allocated: 0 out of 200
+2016-10-18T13:34:51.99+0200 [APP/0]      OUT 2016-10-18 11:34:51.992 DEBUG 18 --- [nfoReplicator-0] c.n.d.shared.NamedConnectionPool         : No free connections [{}->http://service-discovery.local.pcfdev.io:8761][null]
+2016-10-18T13:34:51.99+0200 [APP/0]      OUT 2016-10-18 11:34:51.992 DEBUG 18 --- [nfoReplicator-0] c.n.d.shared.NamedConnectionPool         : Available capacity: 50 out of 50 [{}->http://service-discovery.local.pcfdev.io:8761][null]
+2016-10-18T13:34:51.99+0200 [APP/0]      OUT 2016-10-18 11:34:51.992 DEBUG 18 --- [nfoReplicator-0] c.n.d.shared.NamedConnectionPool         : Creating new connection [{}->http://service-discovery.local.pcfdev.io:8761]
+2016-10-18T13:34:51.99+0200 [APP/0]      OUT 2016-10-18 11:34:51.994 DEBUG 18 --- [nfoReplicator-0] c.n.d.shared.MonitoredConnectionManager  : Released connection is not reusable.
+2016-10-18T13:34:51.99+0200 [APP/0]      OUT 2016-10-18 11:34:51.994 DEBUG 18 --- [nfoReplicator-0] c.n.d.shared.NamedConnectionPool         : Releasing connection [{}->http://service-discovery.local.pcfdev.io:8761][null]
+2016-10-18T13:34:51.99+0200 [APP/0]      OUT 2016-10-18 11:34:51.994 DEBUG 18 --- [nfoReplicator-0] c.n.d.shared.NamedConnectionPool         : Notifying no-one, there are no waiting threads
+2016-10-18T13:34:51.99+0200 [APP/0]      OUT 2016-10-18 11:34:51.994 DEBUG 18 --- [nfoReplicator-0] n.d.s.t.j.AbstractJerseyEurekaHttpClient : Jersey HTTP POST http://service-discovery.local.pcfdev.io:8761/eureka//apps/EUREKA-TEST with instance eaaf445f-8246-4012-777f-0bd3ca52b079; statusCode=N/A
+2016-10-18T13:34:51.99+0200 [APP/0]      OUT 2016-10-18 11:34:51.996 ERROR 18 --- [nfoReplicator-0] c.n.d.s.t.d.RedirectingEurekaHttpClient  : Request execution error
+2016-10-18T13:34:51.99+0200 [APP/0]      OUT com.sun.jersey.api.client.ClientHandlerException: java.net.ConnectException: Connection refused
+2016-10-18T13:34:51.99+0200 [APP/0]      OUT 	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187) ~[jersey-apache-client4-1.19.1.jar!/:1.19.1]
+2016-10-18T13:34:51.99+0200 [APP/0]      OUT 	at com.sun.jersey.api.client.filter.GZIPContentEncodingFilter.handle(GZIPContentEncodingFilter.java:123) ~[jersey-client-1.19.1.jar!/:1.19.1]
+2016-10-18T13:34:51.99+0200 [APP/0]      OUT 	at com.netflix.discovery.EurekaIdentityHeaderFilter.handle(EurekaIdentityHeaderFilter.java:27) ~[eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:34:51.99+0200 [APP/0]      OUT 	at com.sun.jersey.api.client.Client.handle(Client.java:652) ~[jersey-client-1.19.1.jar!/:1.19.1]
+2016-10-18T13:34:51.99+0200 [APP/0]      OUT 	at com.sun.jersey.api.client.WebResource.handle(WebResource.java:682) ~[jersey-client-1.19.1.jar!/:1.19.1]
+2016-10-18T13:34:51.99+0200 [APP/0]      OUT 	at com.sun.jersey.api.client.WebResource.access$200(WebResource.java:74) ~[jersey-client-1.19.1.jar!/:1.19.1]
+2016-10-18T13:34:51.99+0200 [APP/0]      OUT 	at com.sun.jersey.api.client.WebResource$Builder.post(WebResource.java:570) ~[jersey-client-1.19.1.jar!/:1.19.1]
+2016-10-18T13:34:51.99+0200 [APP/0]      OUT 	at com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.register(AbstractJerseyEurekaHttpClient.java:56) ~[eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:34:51.99+0200 [APP/0]      OUT 	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59) [eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:34:51.99+0200 [APP/0]      OUT 	at com.netflix.discovery.shared.transport.decorator.MetricsCollectingEurekaHttpClient.execute(MetricsCollectingEurekaHttpClient.java:73) ~[eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:34:51.99+0200 [APP/0]      OUT 	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56) [eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:34:51.99+0200 [APP/0]      OUT 	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59) [eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:34:51.99+0200 [APP/0]      OUT 	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:118) ~[eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:34:51.99+0200 [APP/0]      OUT 	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:79) ~[eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:34:51.99+0200 [APP/0]      OUT 	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56) [eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:34:51.99+0200 [APP/0]      OUT 	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59) [eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:34:51.99+0200 [APP/0]      OUT 	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:119) [eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:34:51.99+0200 [APP/0]      OUT 	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56) [eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:34:51.99+0200 [APP/0]      OUT 	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59) [eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:34:51.99+0200 [APP/0]      OUT 	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77) [eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:34:51.99+0200 [APP/0]      OUT 	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56) [eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:34:51.99+0200 [APP/0]      OUT 	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:815) [eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:34:51.99+0200 [APP/0]      OUT 	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:104) [eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:34:51.99+0200 [APP/0]      OUT 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_91]
+2016-10-18T13:34:51.99+0200 [APP/0]      OUT 	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_91]
+2016-10-18T13:34:51.99+0200 [APP/0]      OUT 	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180) [na:1.8.0_91]
+2016-10-18T13:34:51.99+0200 [APP/0]      OUT 	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293) [na:1.8.0_91]
+2016-10-18T13:34:51.99+0200 [APP/0]      OUT 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_91]
+2016-10-18T13:34:51.99+0200 [APP/0]      OUT 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_91]
+2016-10-18T13:34:51.99+0200 [APP/0]      OUT 	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_91]
+2016-10-18T13:34:51.99+0200 [APP/0]      OUT Caused by: java.net.ConnectException: Connection refused
+2016-10-18T13:34:51.99+0200 [APP/0]      OUT 	at java.net.PlainSocketImpl.socketConnect(Native Method) ~[na:1.8.0_91]
+2016-10-18T13:34:51.99+0200 [APP/0]      OUT 	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_91]
+2016-10-18T13:34:51.99+0200 [APP/0]      OUT 	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_91]
+2016-10-18T13:34:51.99+0200 [APP/0]      OUT 	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_91]
+2016-10-18T13:34:51.99+0200 [APP/0]      OUT 	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_91]
+2016-10-18T13:34:51.99+0200 [APP/0]      OUT 	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_91]
+2016-10-18T13:34:51.99+0200 [APP/0]      OUT 	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:120) ~[httpclient-4.5.2.jar!/:4.5.2]
+2016-10-18T13:34:51.99+0200 [APP/0]      OUT 	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:179) ~[httpclient-4.5.2.jar!/:4.5.2]
+2016-10-18T13:34:51.99+0200 [APP/0]      OUT 	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144) ~[httpclient-4.5.2.jar!/:4.5.2]
+2016-10-18T13:34:51.99+0200 [APP/0]      OUT 	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:134) ~[httpclient-4.5.2.jar!/:4.5.2]
+2016-10-18T13:34:51.99+0200 [APP/0]      OUT 	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:612) ~[httpclient-4.5.2.jar!/:4.5.2]
+2016-10-18T13:34:51.99+0200 [APP/0]      OUT 	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:447) ~[httpclient-4.5.2.jar!/:4.5.2]
+2016-10-18T13:34:51.99+0200 [APP/0]      OUT 	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:884) ~[httpclient-4.5.2.jar!/:4.5.2]
+2016-10-18T13:34:51.99+0200 [APP/0]      OUT 	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:117) ~[httpclient-4.5.2.jar!/:4.5.2]
+2016-10-18T13:34:51.99+0200 [APP/0]      OUT 	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55) ~[httpclient-4.5.2.jar!/:4.5.2]
+2016-10-18T13:34:51.99+0200 [APP/0]      OUT 	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:173) ~[jersey-apache-client4-1.19.1.jar!/:1.19.1]
+2016-10-18T13:34:51.99+0200 [APP/0]      OUT 	... 29 common frames omitted
+2016-10-18T13:34:51.99+0200 [APP/0]      OUT 2016-10-18 11:34:51.997  WARN 18 --- [nfoReplicator-0] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failure
+2016-10-18T13:34:51.99+0200 [APP/0]      OUT 2016-10-18 11:34:51.997  WARN 18 --- [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_EUREKA-TEST/eaaf445f-8246-4012-777f-0bd3ca52b079 - registration failed Cannot execute request on any known server
+2016-10-18T13:34:51.99+0200 [APP/0]      OUT com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+2016-10-18T13:34:51.99+0200 [APP/0]      OUT 	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:111) ~[eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:34:51.99+0200 [APP/0]      OUT 	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56) ~[eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:34:51.99+0200 [APP/0]      OUT 	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59) ~[eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:34:51.99+0200 [APP/0]      OUT 	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77) ~[eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:34:51.99+0200 [APP/0]      OUT 	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56) ~[eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:34:51.99+0200 [APP/0]      OUT 	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:815) ~[eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:34:51.99+0200 [APP/0]      OUT 	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:104) [eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:34:51.99+0200 [APP/0]      OUT 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_91]
+2016-10-18T13:34:51.99+0200 [APP/0]      OUT 	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_91]
+2016-10-18T13:34:51.99+0200 [APP/0]      OUT 	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180) [na:1.8.0_91]
+2016-10-18T13:34:51.99+0200 [APP/0]      OUT 	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293) [na:1.8.0_91]
+2016-10-18T13:34:51.99+0200 [APP/0]      OUT 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_91]
+2016-10-18T13:34:51.99+0200 [APP/0]      OUT 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_91]
+2016-10-18T13:34:51.99+0200 [APP/0]      OUT 	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_91]
+2016-10-18T13:34:52.00+0200 [APP/0]      OUT 2016-10-18 11:34:51.998  WARN 18 --- [nfoReplicator-0] c.n.discovery.InstanceInfoReplicator     : There was a problem with the instance info replicator
+2016-10-18T13:34:52.00+0200 [APP/0]      OUT com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+2016-10-18T13:34:52.00+0200 [APP/0]      OUT 	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:111) ~[eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:34:52.00+0200 [APP/0]      OUT 	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56) ~[eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:34:52.00+0200 [APP/0]      OUT 	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59) ~[eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:34:52.00+0200 [APP/0]      OUT 	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77) ~[eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:34:52.00+0200 [APP/0]      OUT 	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56) ~[eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:34:52.00+0200 [APP/0]      OUT 	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:815) ~[eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:34:52.00+0200 [APP/0]      OUT 	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:104) ~[eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:34:52.00+0200 [APP/0]      OUT 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_91]
+2016-10-18T13:34:52.00+0200 [APP/0]      OUT 	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_91]
+2016-10-18T13:34:52.00+0200 [APP/0]      OUT 	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180) [na:1.8.0_91]
+2016-10-18T13:34:52.00+0200 [APP/0]      OUT 	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293) [na:1.8.0_91]
+2016-10-18T13:34:52.00+0200 [APP/0]      OUT 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_91]
+2016-10-18T13:34:52.00+0200 [APP/0]      OUT 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_91]
+2016-10-18T13:34:52.00+0200 [APP/0]      OUT 	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_91]
+2016-10-18T13:35:18.60+0200 [APP/0]      OUT 2016-10-18 11:35:18.603 DEBUG 18 --- [nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Initializing servlet 'dispatcherServlet'
+2016-10-18T13:35:18.60+0200 [APP/0]      OUT 2016-10-18 11:35:18.605  INFO 18 --- [nio-8080-exec-4] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2016-10-18T13:35:18.60+0200 [APP/0]      OUT 2016-10-18 11:35:18.605  INFO 18 --- [nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2016-10-18T13:35:18.60+0200 [APP/0]      OUT 2016-10-18 11:35:18.606 DEBUG 18 --- [nio-8080-exec-4] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'multipartResolver'
+2016-10-18T13:35:18.60+0200 [APP/0]      OUT 2016-10-18 11:35:18.607 DEBUG 18 --- [nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Using MultipartResolver [org.springframework.web.multipart.support.StandardServletMultipartResolver@5454d35e]
+2016-10-18T13:35:18.60+0200 [APP/0]      OUT 2016-10-18 11:35:18.609 DEBUG 18 --- [nio-8080-exec-4] o.s.b.f.s.DefaultListableBeanFactory     : Creating instance of bean 'org.springframework.web.servlet.i18n.AcceptHeaderLocaleResolver'
+2016-10-18T13:35:18.61+0200 [APP/0]      OUT 2016-10-18 11:35:18.614 DEBUG 18 --- [nio-8080-exec-4] o.s.b.f.s.DefaultListableBeanFactory     : Finished creating instance of bean 'org.springframework.web.servlet.i18n.AcceptHeaderLocaleResolver'
+2016-10-18T13:35:18.61+0200 [APP/0]      OUT 2016-10-18 11:35:18.615 DEBUG 18 --- [nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Unable to locate LocaleResolver with name 'localeResolver': using default [org.springframework.web.servlet.i18n.AcceptHeaderLocaleResolver@ad45e26]
+2016-10-18T13:35:18.61+0200 [APP/0]      OUT 2016-10-18 11:35:18.617 DEBUG 18 --- [nio-8080-exec-4] o.s.b.f.s.DefaultListableBeanFactory     : Creating instance of bean 'org.springframework.web.servlet.theme.FixedThemeResolver'
+2016-10-18T13:35:18.62+0200 [APP/0]      OUT 2016-10-18 11:35:18.620 DEBUG 18 --- [nio-8080-exec-4] o.s.b.f.s.DefaultListableBeanFactory     : Finished creating instance of bean 'org.springframework.web.servlet.theme.FixedThemeResolver'
+2016-10-18T13:35:18.62+0200 [APP/0]      OUT 2016-10-18 11:35:18.621 DEBUG 18 --- [nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Unable to locate ThemeResolver with name 'themeResolver': using default [org.springframework.web.servlet.theme.FixedThemeResolver@565e6b95]
+2016-10-18T13:35:18.62+0200 [APP/0]      OUT 2016-10-18 11:35:18.622 DEBUG 18 --- [nio-8080-exec-4] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'requestMappingHandlerMapping'
+2016-10-18T13:35:18.62+0200 [APP/0]      OUT 2016-10-18 11:35:18.622 DEBUG 18 --- [nio-8080-exec-4] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'viewControllerHandlerMapping'
+2016-10-18T13:35:18.62+0200 [APP/0]      OUT 2016-10-18 11:35:18.622 DEBUG 18 --- [nio-8080-exec-4] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'beanNameHandlerMapping'
+2016-10-18T13:35:18.62+0200 [APP/0]      OUT 2016-10-18 11:35:18.622 DEBUG 18 --- [nio-8080-exec-4] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'resourceHandlerMapping'
+2016-10-18T13:35:18.62+0200 [APP/0]      OUT 2016-10-18 11:35:18.622 DEBUG 18 --- [nio-8080-exec-4] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'defaultServletHandlerMapping'
+2016-10-18T13:35:18.62+0200 [APP/0]      OUT 2016-10-18 11:35:18.622 DEBUG 18 --- [nio-8080-exec-4] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'faviconHandlerMapping'
+2016-10-18T13:35:18.62+0200 [APP/0]      OUT 2016-10-18 11:35:18.622 DEBUG 18 --- [nio-8080-exec-4] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'welcomePageHandlerMapping'
+2016-10-18T13:35:18.62+0200 [APP/0]      OUT 2016-10-18 11:35:18.622 DEBUG 18 --- [nio-8080-exec-4] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'endpointHandlerMapping'
+2016-10-18T13:35:18.62+0200 [APP/0]      OUT 2016-10-18 11:35:18.622 DEBUG 18 --- [nio-8080-exec-4] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'requestMappingHandlerAdapter'
+2016-10-18T13:35:18.62+0200 [APP/0]      OUT 2016-10-18 11:35:18.622 DEBUG 18 --- [nio-8080-exec-4] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'httpRequestHandlerAdapter'
+2016-10-18T13:35:18.62+0200 [APP/0]      OUT 2016-10-18 11:35:18.622 DEBUG 18 --- [nio-8080-exec-4] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'simpleControllerHandlerAdapter'
+2016-10-18T13:35:18.62+0200 [APP/0]      OUT 2016-10-18 11:35:18.624 DEBUG 18 --- [nio-8080-exec-4] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'errorAttributes'
+2016-10-18T13:35:18.62+0200 [APP/0]      OUT 2016-10-18 11:35:18.624 DEBUG 18 --- [nio-8080-exec-4] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'handlerExceptionResolver'
+2016-10-18T13:35:18.62+0200 [APP/0]      OUT 2016-10-18 11:35:18.627 DEBUG 18 --- [nio-8080-exec-4] o.s.b.f.s.DefaultListableBeanFactory     : Creating instance of bean 'org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator'
+2016-10-18T13:35:18.63+0200 [APP/0]      OUT 2016-10-18 11:35:18.630 DEBUG 18 --- [nio-8080-exec-4] o.s.b.f.s.DefaultListableBeanFactory     : Finished creating instance of bean 'org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator'
+2016-10-18T13:35:18.63+0200 [APP/0]      OUT 2016-10-18 11:35:18.630 DEBUG 18 --- [nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Unable to locate RequestToViewNameTranslator with name 'viewNameTranslator': using default [org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@68fd3d3c]
+2016-10-18T13:35:18.63+0200 [APP/0]      OUT 2016-10-18 11:35:18.631 DEBUG 18 --- [nio-8080-exec-4] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'beanNameViewResolver'
+2016-10-18T13:35:18.63+0200 [APP/0]      OUT 2016-10-18 11:35:18.631 DEBUG 18 --- [nio-8080-exec-4] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'mvcViewResolver'
+2016-10-18T13:35:18.63+0200 [APP/0]      OUT 2016-10-18 11:35:18.631 DEBUG 18 --- [nio-8080-exec-4] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'defaultViewResolver'
+2016-10-18T13:35:18.63+0200 [APP/0]      OUT 2016-10-18 11:35:18.631 DEBUG 18 --- [nio-8080-exec-4] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'viewResolver'
+2016-10-18T13:35:18.63+0200 [APP/0]      OUT 2016-10-18 11:35:18.633 DEBUG 18 --- [nio-8080-exec-4] o.s.b.f.s.DefaultListableBeanFactory     : Creating instance of bean 'org.springframework.web.servlet.support.SessionFlashMapManager'
+2016-10-18T13:35:18.63+0200 [APP/0]      OUT 2016-10-18 11:35:18.638 DEBUG 18 --- [nio-8080-exec-4] o.s.b.f.s.DefaultListableBeanFactory     : Finished creating instance of bean 'org.springframework.web.servlet.support.SessionFlashMapManager'
+2016-10-18T13:35:18.63+0200 [APP/0]      OUT 2016-10-18 11:35:18.638 DEBUG 18 --- [nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Unable to locate FlashMapManager with name 'flashMapManager': using default [org.springframework.web.servlet.support.SessionFlashMapManager@2d12db92]
+2016-10-18T13:35:18.63+0200 [APP/0]      OUT 2016-10-18 11:35:18.638 DEBUG 18 --- [nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Published WebApplicationContext of servlet 'dispatcherServlet' as ServletContext attribute with name [org.springframework.web.servlet.FrameworkServlet.CONTEXT.dispatcherServlet]
+2016-10-18T13:35:18.63+0200 [APP/0]      OUT 2016-10-18 11:35:18.638  INFO 18 --- [nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 32 ms
+2016-10-18T13:35:18.63+0200 [APP/0]      OUT 2016-10-18 11:35:18.638 DEBUG 18 --- [nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Servlet 'dispatcherServlet' configured successfully
+2016-10-18T13:35:18.66+0200 [APP/0]      OUT 2016-10-18 11:35:18.668 DEBUG 18 --- [nio-8080-exec-4] o.s.b.w.f.OrderedRequestContextFilter    : Bound request context to thread: org.apache.catalina.connector.RequestFacade@37d9c60c
+2016-10-18T13:35:18.67+0200 [APP/0]      OUT 2016-10-18 11:35:18.673 DEBUG 18 --- [nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : DispatcherServlet with name 'dispatcherServlet' processing GET request for [/]
+2016-10-18T13:35:18.67+0200 [APP/0]      OUT 2016-10-18 11:35:18.676 DEBUG 18 --- [nio-8080-exec-4] o.s.b.a.e.mvc.EndpointHandlerMapping     : Looking up handler method for path /
+2016-10-18T13:35:18.68+0200 [APP/0]      OUT 2016-10-18 11:35:18.685 DEBUG 18 --- [nio-8080-exec-4] o.s.b.a.e.mvc.EndpointHandlerMapping     : Did not find handler method for [/]
+2016-10-18T13:35:18.68+0200 [APP/0]      OUT 2016-10-18 11:35:18.685 DEBUG 18 --- [nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Looking up handler method for path /
+2016-10-18T13:35:18.68+0200 [APP/0]      OUT 2016-10-18 11:35:18.687 DEBUG 18 --- [nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Returning handler method [public java.lang.String eu.nimble.core.infrastructure.test.Application.home()]
+2016-10-18T13:35:18.68+0200 [APP/0]      OUT 2016-10-18 11:35:18.687 DEBUG 18 --- [nio-8080-exec-4] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'application'
+2016-10-18T13:35:18.68+0200 [APP/0]      OUT 2016-10-18 11:35:18.688 DEBUG 18 --- [nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Last-Modified value for [/] is: -1
+2016-10-18T13:35:18.71+0200 [RTR/0]      OUT eureka-test.local.pcfdev.io - [18/10/2016:11:35:18.571 +0000] "GET / HTTP/1.1" 200 0 11 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.143 Safari/537.36" 192.168.11.1:51908 x_forwarded_for:"-" x_forwarded_proto:"http" vcap_request_id:106e9bbf-84e3-4438-60ac-20cac2a8de0d response_time:0.139438601 app_id:5b34405d-c14e-4c62-be77-8f351f275807
+2016-10-18T13:35:18.71+0200 [APP/0]      OUT 2016-10-18 11:35:18.712 DEBUG 18 --- [nio-8080-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Written [Hello world] as "text/html" using [org.springframework.http.converter.StringHttpMessageConverter@484970b0]
+2016-10-18T13:35:18.71+0200 [APP/0]      OUT 2016-10-18 11:35:18.713 DEBUG 18 --- [nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Null ModelAndView returned to DispatcherServlet with name 'dispatcherServlet': assuming HandlerAdapter completed request handling
+2016-10-18T13:35:18.71+0200 [APP/0]      OUT 2016-10-18 11:35:18.717 DEBUG 18 --- [nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Successfully completed request
+2016-10-18T13:35:18.72+0200 [APP/0]      OUT 2016-10-18 11:35:18.720 DEBUG 18 --- [nio-8080-exec-4] o.s.b.w.f.OrderedRequestContextFilter    : Cleared thread-bound request context: org.apache.catalina.connector.RequestFacade@37d9c60c
+2016-10-18T13:35:21.68+0200 [APP/0]      OUT 2016-10-18 11:35:21.688 DEBUG 18 --- [t-Conn-Cleaner2] c.n.d.shared.MonitoredConnectionManager  : Closing connections idle longer than -1 SECONDS
+2016-10-18T13:35:21.68+0200 [APP/0]      OUT 2016-10-18 11:35:21.688 DEBUG 18 --- [t-Conn-Cleaner2] c.n.d.shared.MonitoredConnectionManager  : Closing connections idle longer than 30000 SECONDS
+2016-10-18T13:35:21.68+0200 [APP/0]      OUT 2016-10-18 11:35:21.689 DEBUG 18 --- [t-Conn-Cleaner2] c.n.d.shared.NamedConnectionPool         : Closing connections idle longer than 0 SECONDS
+2016-10-18T13:35:21.69+0200 [APP/0]      OUT 2016-10-18 11:35:21.689 DEBUG 18 --- [t-Conn-Cleaner2] c.n.d.shared.NamedConnectionPool         : Closing connections idle longer than 30000 SECONDS
+2016-10-18T13:35:21.88+0200 [APP/0]      OUT 2016-10-18 11:35:21.883  INFO 18 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2016-10-18T13:35:21.88+0200 [APP/0]      OUT 2016-10-18 11:35:21.883  INFO 18 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2016-10-18T13:35:21.88+0200 [APP/0]      OUT 2016-10-18 11:35:21.883  INFO 18 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2016-10-18T13:35:21.88+0200 [APP/0]      OUT 2016-10-18 11:35:21.883  INFO 18 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2016-10-18T13:35:21.88+0200 [APP/0]      OUT 2016-10-18 11:35:21.883  INFO 18 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2016-10-18T13:35:21.88+0200 [APP/0]      OUT 2016-10-18 11:35:21.883  INFO 18 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2016-10-18T13:35:21.88+0200 [APP/0]      OUT 2016-10-18 11:35:21.883  INFO 18 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2016-10-18T13:35:21.88+0200 [APP/0]      OUT 2016-10-18 11:35:21.883 DEBUG 18 --- [freshExecutor-0] c.n.d.s.t.d.RetryableEurekaHttpClient    : Clearing quarantined list of size 1
+2016-10-18T13:35:21.88+0200 [APP/0]      OUT 2016-10-18 11:35:21.884 DEBUG 18 --- [freshExecutor-0] n.d.s.t.j.AbstractJerseyEurekaHttpClient : Created client for url: http://service-discovery.local.pcfdev.io:8761/eureka/
+2016-10-18T13:35:21.88+0200 [APP/0]      OUT 2016-10-18 11:35:21.884 DEBUG 18 --- [tbeatExecutor-0] c.n.d.s.t.d.RetryableEurekaHttpClient    : Clearing quarantined list of size 1
+2016-10-18T13:35:21.88+0200 [APP/0]      OUT 2016-10-18 11:35:21.885 DEBUG 18 --- [tbeatExecutor-0] n.d.s.t.j.AbstractJerseyEurekaHttpClient : Created client for url: http://service-discovery.local.pcfdev.io:8761/eureka/
+2016-10-18T13:35:21.88+0200 [APP/0]      OUT 2016-10-18 11:35:21.887 DEBUG 18 --- [freshExecutor-0] c.n.d.shared.MonitoredConnectionManager  : Get connection: {}->http://service-discovery.local.pcfdev.io:8761, timeout = 5000
+2016-10-18T13:35:21.88+0200 [APP/0]      OUT 2016-10-18 11:35:21.887 DEBUG 18 --- [freshExecutor-0] c.n.d.shared.NamedConnectionPool         : [{}->http://service-discovery.local.pcfdev.io:8761] total kept alive: 0, total issued: 0, total allocated: 0 out of 200
+2016-10-18T13:35:21.88+0200 [APP/0]      OUT 2016-10-18 11:35:21.887 DEBUG 18 --- [freshExecutor-0] c.n.d.shared.NamedConnectionPool         : No free connections [{}->http://service-discovery.local.pcfdev.io:8761][null]
+2016-10-18T13:35:21.88+0200 [APP/0]      OUT 2016-10-18 11:35:21.887 DEBUG 18 --- [freshExecutor-0] c.n.d.shared.NamedConnectionPool         : Available capacity: 50 out of 50 [{}->http://service-discovery.local.pcfdev.io:8761][null]
+2016-10-18T13:35:21.88+0200 [APP/0]      OUT 2016-10-18 11:35:21.887 DEBUG 18 --- [freshExecutor-0] c.n.d.shared.NamedConnectionPool         : Creating new connection [{}->http://service-discovery.local.pcfdev.io:8761]
+2016-10-18T13:35:21.88+0200 [APP/0]      OUT 2016-10-18 11:35:21.887 DEBUG 18 --- [tbeatExecutor-0] c.n.d.shared.MonitoredConnectionManager  : Get connection: {}->http://service-discovery.local.pcfdev.io:8761, timeout = 5000
+2016-10-18T13:35:21.88+0200 [APP/0]      OUT 2016-10-18 11:35:21.888 DEBUG 18 --- [tbeatExecutor-0] c.n.d.shared.NamedConnectionPool         : [{}->http://service-discovery.local.pcfdev.io:8761] total kept alive: 0, total issued: 1, total allocated: 1 out of 200
+2016-10-18T13:35:21.89+0200 [APP/0]      OUT 2016-10-18 11:35:21.888 DEBUG 18 --- [tbeatExecutor-0] c.n.d.shared.NamedConnectionPool         : No free connections [{}->http://service-discovery.local.pcfdev.io:8761][null]
+2016-10-18T13:35:21.89+0200 [APP/0]      OUT 2016-10-18 11:35:21.889 DEBUG 18 --- [tbeatExecutor-0] c.n.d.shared.NamedConnectionPool         : Available capacity: 49 out of 50 [{}->http://service-discovery.local.pcfdev.io:8761][null]
+2016-10-18T13:35:21.89+0200 [APP/0]      OUT 2016-10-18 11:35:21.891 DEBUG 18 --- [tbeatExecutor-0] c.n.d.shared.NamedConnectionPool         : Creating new connection [{}->http://service-discovery.local.pcfdev.io:8761]
+2016-10-18T13:35:21.89+0200 [APP/0]      OUT 2016-10-18 11:35:21.896 DEBUG 18 --- [freshExecutor-0] c.n.d.shared.MonitoredConnectionManager  : Released connection is not reusable.
+2016-10-18T13:35:21.89+0200 [APP/0]      OUT 2016-10-18 11:35:21.896 DEBUG 18 --- [tbeatExecutor-0] c.n.d.shared.MonitoredConnectionManager  : Released connection is not reusable.
+2016-10-18T13:35:21.89+0200 [APP/0]      OUT 2016-10-18 11:35:21.896 DEBUG 18 --- [tbeatExecutor-0] c.n.d.shared.NamedConnectionPool         : Releasing connection [{}->http://service-discovery.local.pcfdev.io:8761][null]
+2016-10-18T13:35:21.89+0200 [APP/0]      OUT 2016-10-18 11:35:21.896 DEBUG 18 --- [freshExecutor-0] c.n.d.shared.NamedConnectionPool         : Releasing connection [{}->http://service-discovery.local.pcfdev.io:8761][null]
+2016-10-18T13:35:21.89+0200 [APP/0]      OUT 2016-10-18 11:35:21.897 DEBUG 18 --- [tbeatExecutor-0] c.n.d.shared.NamedConnectionPool         : Notifying no-one, there are no waiting threads
+2016-10-18T13:35:21.89+0200 [APP/0]      OUT 2016-10-18 11:35:21.897 DEBUG 18 --- [freshExecutor-0] c.n.d.shared.NamedConnectionPool         : Notifying no-one, there are no waiting threads
+2016-10-18T13:35:21.89+0200 [APP/0]      OUT 2016-10-18 11:35:21.897 DEBUG 18 --- [freshExecutor-0] n.d.s.t.j.AbstractJerseyEurekaHttpClient : Jersey HTTP GET http://service-discovery.local.pcfdev.io:8761/eureka//apps/?; statusCode=N/A
+2016-10-18T13:35:21.89+0200 [APP/0]      OUT 2016-10-18 11:35:21.898 DEBUG 18 --- [tbeatExecutor-0] n.d.s.t.j.AbstractJerseyEurekaHttpClient : Jersey HTTP PUT http://service-discovery.local.pcfdev.io:8761/eureka//apps/EUREKA-TEST/eaaf445f-8246-4012-777f-0bd3ca52b079; statusCode=N/A
+2016-10-18T13:35:21.90+0200 [APP/0]      OUT 2016-10-18 11:35:21.900 ERROR 18 --- [freshExecutor-0] c.n.d.s.t.d.RedirectingEurekaHttpClient  : Request execution error
+2016-10-18T13:35:21.90+0200 [APP/0]      OUT com.sun.jersey.api.client.ClientHandlerException: java.net.ConnectException: Connection refused
+2016-10-18T13:35:21.90+0200 [APP/0]      OUT 	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187) ~[jersey-apache-client4-1.19.1.jar!/:1.19.1]
+2016-10-18T13:35:21.90+0200 [APP/0]      OUT 	at com.sun.jersey.api.client.filter.GZIPContentEncodingFilter.handle(GZIPContentEncodingFilter.java:123) ~[jersey-client-1.19.1.jar!/:1.19.1]
+2016-10-18T13:35:21.90+0200 [APP/0]      OUT 	at com.netflix.discovery.EurekaIdentityHeaderFilter.handle(EurekaIdentityHeaderFilter.java:27) ~[eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:35:21.90+0200 [APP/0]      OUT 	at com.sun.jersey.api.client.Client.handle(Client.java:652) ~[jersey-client-1.19.1.jar!/:1.19.1]
+2016-10-18T13:35:21.90+0200 [APP/0]      OUT 	at com.sun.jersey.api.client.WebResource.handle(WebResource.java:682) ~[jersey-client-1.19.1.jar!/:1.19.1]
+2016-10-18T13:35:21.90+0200 [APP/0]      OUT 	at com.sun.jersey.api.client.WebResource.access$200(WebResource.java:74) ~[jersey-client-1.19.1.jar!/:1.19.1]
+2016-10-18T13:35:21.90+0200 [APP/0]      OUT 	at com.sun.jersey.api.client.WebResource$Builder.get(WebResource.java:509) ~[jersey-client-1.19.1.jar!/:1.19.1]
+2016-10-18T13:35:21.90+0200 [APP/0]      OUT 	at com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.getApplicationsInternal(AbstractJerseyEurekaHttpClient.java:194) ~[eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:35:21.90+0200 [APP/0]      OUT 	at com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.getApplications(AbstractJerseyEurekaHttpClient.java:165) ~[eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:35:21.90+0200 [APP/0]      OUT 	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$6.execute(EurekaHttpClientDecorator.java:137) [eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:35:21.90+0200 [APP/0]      OUT 	at com.netflix.discovery.shared.transport.decorator.MetricsCollectingEurekaHttpClient.execute(MetricsCollectingEurekaHttpClient.java:73) ~[eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:35:21.90+0200 [APP/0]      OUT 	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getApplications(EurekaHttpClientDecorator.java:134) [eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:35:21.90+0200 [APP/0]      OUT 	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$6.execute(EurekaHttpClientDecorator.java:137) [eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:35:21.90+0200 [APP/0]      OUT 	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:118) ~[eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:35:21.90+0200 [APP/0]      OUT 	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:79) ~[eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:35:21.90+0200 [APP/0]      OUT 	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getApplications(EurekaHttpClientDecorator.java:134) [eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:35:21.90+0200 [APP/0]      OUT 	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$6.execute(EurekaHttpClientDecorator.java:137) [eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:35:21.90+0200 [APP/0]      OUT 	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:119) [eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:35:21.90+0200 [APP/0]      OUT 	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getApplications(EurekaHttpClientDecorator.java:134) [eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:35:21.90+0200 [APP/0]      OUT 	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$6.execute(EurekaHttpClientDecorator.java:137) [eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:35:21.90+0200 [APP/0]      OUT 	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77) [eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:35:21.90+0200 [APP/0]      OUT 	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getApplications(EurekaHttpClientDecorator.java:134) [eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:35:21.90+0200 [APP/0]      OUT 	at com.netflix.discovery.DiscoveryClient.getAndStoreFullRegistry(DiscoveryClient.java:1030) [eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:35:21.90+0200 [APP/0]      OUT 	at com.netflix.discovery.DiscoveryClient.fetchRegistry(DiscoveryClient.java:944) [eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:35:21.90+0200 [APP/0]      OUT 	at com.netflix.discovery.DiscoveryClient.refreshRegistry(DiscoveryClient.java:1468) [eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:35:21.90+0200 [APP/0]      OUT 	at com.netflix.discovery.DiscoveryClient$CacheRefreshThread.run(DiscoveryClient.java:1435) [eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:35:21.90+0200 [APP/0]      OUT 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_91]
+2016-10-18T13:35:21.90+0200 [APP/0]      OUT 	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_91]
+2016-10-18T13:35:21.90+0200 [APP/0]      OUT 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_91]
+2016-10-18T13:35:21.90+0200 [APP/0]      OUT 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_91]
+2016-10-18T13:35:21.90+0200 [APP/0]      OUT 	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_91]
+2016-10-18T13:35:21.90+0200 [APP/0]      OUT Caused by: java.net.ConnectException: Connection refused
+2016-10-18T13:35:21.90+0200 [APP/0]      OUT 	at java.net.PlainSocketImpl.socketConnect(Native Method) ~[na:1.8.0_91]
+2016-10-18T13:35:21.90+0200 [APP/0]      OUT 	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_91]
+2016-10-18T13:35:21.90+0200 [APP/0]      OUT 	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_91]
+2016-10-18T13:35:21.90+0200 [APP/0]      OUT 	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_91]
+2016-10-18T13:35:21.90+0200 [APP/0]      OUT 	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_91]
+2016-10-18T13:35:21.90+0200 [APP/0]      OUT 	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_91]
+2016-10-18T13:35:21.90+0200 [APP/0]      OUT 	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:120) ~[httpclient-4.5.2.jar!/:4.5.2]
+2016-10-18T13:35:21.90+0200 [APP/0]      OUT 	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:179) ~[httpclient-4.5.2.jar!/:4.5.2]
+2016-10-18T13:35:21.90+0200 [APP/0]      OUT 	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144) ~[httpclient-4.5.2.jar!/:4.5.2]
+2016-10-18T13:35:21.90+0200 [APP/0]      OUT 	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:134) ~[httpclient-4.5.2.jar!/:4.5.2]
+2016-10-18T13:35:21.90+0200 [APP/0]      OUT 	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:612) ~[httpclient-4.5.2.jar!/:4.5.2]
+2016-10-18T13:35:21.90+0200 [APP/0]      OUT 	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:447) ~[httpclient-4.5.2.jar!/:4.5.2]
+2016-10-18T13:35:21.90+0200 [APP/0]      OUT 	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:884) ~[httpclient-4.5.2.jar!/:4.5.2]
+2016-10-18T13:35:21.90+0200 [APP/0]      OUT 	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:117) ~[httpclient-4.5.2.jar!/:4.5.2]
+2016-10-18T13:35:21.90+0200 [APP/0]      OUT 	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55) ~[httpclient-4.5.2.jar!/:4.5.2]
+2016-10-18T13:35:21.90+0200 [APP/0]      OUT 	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:173) ~[jersey-apache-client4-1.19.1.jar!/:1.19.1]
+2016-10-18T13:35:21.90+0200 [APP/0]      OUT 	... 30 common frames omitted
+2016-10-18T13:35:21.90+0200 [APP/0]      OUT 2016-10-18 11:35:21.900 ERROR 18 --- [tbeatExecutor-0] c.n.d.s.t.d.RedirectingEurekaHttpClient  : Request execution error
+2016-10-18T13:35:21.90+0200 [APP/0]      OUT com.sun.jersey.api.client.ClientHandlerException: java.net.ConnectException: Connection refused
+2016-10-18T13:35:21.90+0200 [APP/0]      OUT 	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187) ~[jersey-apache-client4-1.19.1.jar!/:1.19.1]
+2016-10-18T13:35:21.90+0200 [APP/0]      OUT 	at com.sun.jersey.api.client.filter.GZIPContentEncodingFilter.handle(GZIPContentEncodingFilter.java:123) ~[jersey-client-1.19.1.jar!/:1.19.1]
+2016-10-18T13:35:21.90+0200 [APP/0]      OUT 	at com.netflix.discovery.EurekaIdentityHeaderFilter.handle(EurekaIdentityHeaderFilter.java:27) ~[eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:35:21.90+0200 [APP/0]      OUT 	at com.sun.jersey.api.client.Client.handle(Client.java:652) ~[jersey-client-1.19.1.jar!/:1.19.1]
+2016-10-18T13:35:21.90+0200 [APP/0]      OUT 	at com.sun.jersey.api.client.WebResource.handle(WebResource.java:682) ~[jersey-client-1.19.1.jar!/:1.19.1]
+2016-10-18T13:35:21.90+0200 [APP/0]      OUT 	at com.sun.jersey.api.client.WebResource.access$200(WebResource.java:74) ~[jersey-client-1.19.1.jar!/:1.19.1]
+2016-10-18T13:35:21.90+0200 [APP/0]      OUT 	at com.sun.jersey.api.client.WebResource$Builder.put(WebResource.java:529) ~[jersey-client-1.19.1.jar!/:1.19.1]
+2016-10-18T13:35:21.90+0200 [APP/0]      OUT 	at com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.sendHeartBeat(AbstractJerseyEurekaHttpClient.java:102) ~[eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:35:21.90+0200 [APP/0]      OUT 	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92) [eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:35:21.90+0200 [APP/0]      OUT 	at com.netflix.discovery.shared.transport.decorator.MetricsCollectingEurekaHttpClient.execute(MetricsCollectingEurekaHttpClient.java:73) ~[eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:35:21.90+0200 [APP/0]      OUT 	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89) [eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:35:21.90+0200 [APP/0]      OUT 	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92) [eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:35:21.90+0200 [APP/0]      OUT 	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:118) ~[eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:35:21.90+0200 [APP/0]      OUT 	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:79) ~[eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:35:21.90+0200 [APP/0]      OUT 	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89) [eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:35:21.90+0200 [APP/0]      OUT 	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92) [eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:35:21.90+0200 [APP/0]      OUT 	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:119) [eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:35:21.90+0200 [APP/0]      OUT 	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89) [eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:35:21.90+0200 [APP/0]      OUT 	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92) [eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:35:21.90+0200 [APP/0]      OUT 	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77) [eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:35:21.90+0200 [APP/0]      OUT 	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89) [eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:35:21.90+0200 [APP/0]      OUT 	at com.netflix.discovery.DiscoveryClient.renew(DiscoveryClient.java:832) [eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:35:21.90+0200 [APP/0]      OUT 	at com.netflix.discovery.DiscoveryClient$HeartbeatThread.run(DiscoveryClient.java:1396) [eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:35:21.90+0200 [APP/0]      OUT 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_91]
+2016-10-18T13:35:21.90+0200 [APP/0]      OUT 	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_91]
+2016-10-18T13:35:21.90+0200 [APP/0]      OUT 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_91]
+2016-10-18T13:35:21.90+0200 [APP/0]      OUT 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_91]
+2016-10-18T13:35:21.90+0200 [APP/0]      OUT 	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_91]
+2016-10-18T13:35:21.90+0200 [APP/0]      OUT Caused by: java.net.ConnectException: Connection refused
+2016-10-18T13:35:21.90+0200 [APP/0]      OUT 	at java.net.PlainSocketImpl.socketConnect(Native Method) ~[na:1.8.0_91]
+2016-10-18T13:35:21.90+0200 [APP/0]      OUT 	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_91]
+2016-10-18T13:35:21.90+0200 [APP/0]      OUT 	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_91]
+2016-10-18T13:35:21.90+0200 [APP/0]      OUT 	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_91]
+2016-10-18T13:35:21.90+0200 [APP/0]      OUT 	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_91]
+2016-10-18T13:35:21.90+0200 [APP/0]      OUT 	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_91]
+2016-10-18T13:35:21.90+0200 [APP/0]      OUT 	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:120) ~[httpclient-4.5.2.jar!/:4.5.2]
+2016-10-18T13:35:21.90+0200 [APP/0]      OUT 	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:179) ~[httpclient-4.5.2.jar!/:4.5.2]
+2016-10-18T13:35:21.90+0200 [APP/0]      OUT 	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144) ~[httpclient-4.5.2.jar!/:4.5.2]
+2016-10-18T13:35:21.90+0200 [APP/0]      OUT 	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:134) ~[httpclient-4.5.2.jar!/:4.5.2]
+2016-10-18T13:35:21.90+0200 [APP/0]      OUT 	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:612) ~[httpclient-4.5.2.jar!/:4.5.2]
+2016-10-18T13:35:21.90+0200 [APP/0]      OUT 	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:447) ~[httpclient-4.5.2.jar!/:4.5.2]
+2016-10-18T13:35:21.90+0200 [APP/0]      OUT 	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:884) ~[httpclient-4.5.2.jar!/:4.5.2]
+2016-10-18T13:35:21.90+0200 [APP/0]      OUT 	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:117) ~[httpclient-4.5.2.jar!/:4.5.2]
+2016-10-18T13:35:21.90+0200 [APP/0]      OUT 	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55) ~[httpclient-4.5.2.jar!/:4.5.2]
+2016-10-18T13:35:21.90+0200 [APP/0]      OUT 	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:173) ~[jersey-apache-client4-1.19.1.jar!/:1.19.1]
+2016-10-18T13:35:21.90+0200 [APP/0]      OUT 	... 27 common frames omitted
+2016-10-18T13:35:21.90+0200 [APP/0]      OUT 2016-10-18 11:35:21.900  WARN 18 --- [freshExecutor-0] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failure
+2016-10-18T13:35:21.90+0200 [APP/0]      OUT 2016-10-18 11:35:21.900  WARN 18 --- [tbeatExecutor-0] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failure
+2016-10-18T13:35:21.90+0200 [APP/0]      OUT 2016-10-18 11:35:21.901 ERROR 18 --- [tbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_EUREKA-TEST/eaaf445f-8246-4012-777f-0bd3ca52b079 - was unable to send heartbeat!
+2016-10-18T13:35:21.90+0200 [APP/0]      OUT com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+2016-10-18T13:35:21.90+0200 [APP/0]      OUT 	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:111) ~[eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:35:21.90+0200 [APP/0]      OUT 	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89) ~[eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:35:21.90+0200 [APP/0]      OUT 	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92) ~[eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:35:21.90+0200 [APP/0]      OUT 	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77) ~[eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:35:21.90+0200 [APP/0]      OUT 	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89) ~[eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:35:21.90+0200 [APP/0]      OUT 	at com.netflix.discovery.DiscoveryClient.renew(DiscoveryClient.java:832) ~[eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:35:21.90+0200 [APP/0]      OUT 	at com.netflix.discovery.DiscoveryClient$HeartbeatThread.run(DiscoveryClient.java:1396) [eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:35:21.90+0200 [APP/0]      OUT 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_91]
+2016-10-18T13:35:21.90+0200 [APP/0]      OUT 	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_91]
+2016-10-18T13:35:21.90+0200 [APP/0]      OUT 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_91]
+2016-10-18T13:35:21.90+0200 [APP/0]      OUT 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_91]
+2016-10-18T13:35:21.90+0200 [APP/0]      OUT 	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_91]
+2016-10-18T13:35:21.90+0200 [APP/0]      OUT 2016-10-18 11:35:21.901 ERROR 18 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_EUREKA-TEST/eaaf445f-8246-4012-777f-0bd3ca52b079 - was unable to refresh its cache! status = Cannot execute request on any known server
+2016-10-18T13:35:21.90+0200 [APP/0]      OUT com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+2016-10-18T13:35:21.90+0200 [APP/0]      OUT 	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:111) ~[eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:35:21.90+0200 [APP/0]      OUT 	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getApplications(EurekaHttpClientDecorator.java:134) ~[eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:35:21.90+0200 [APP/0]      OUT 	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$6.execute(EurekaHttpClientDecorator.java:137) ~[eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:35:21.90+0200 [APP/0]      OUT 	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77) ~[eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:35:21.90+0200 [APP/0]      OUT 	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getApplications(EurekaHttpClientDecorator.java:134) ~[eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:35:21.90+0200 [APP/0]      OUT 	at com.netflix.discovery.DiscoveryClient.getAndStoreFullRegistry(DiscoveryClient.java:1030) [eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:35:21.90+0200 [APP/0]      OUT 	at com.netflix.discovery.DiscoveryClient.fetchRegistry(DiscoveryClient.java:944) [eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:35:21.90+0200 [APP/0]      OUT 	at com.netflix.discovery.DiscoveryClient.refreshRegistry(DiscoveryClient.java:1468) [eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:35:21.90+0200 [APP/0]      OUT 	at com.netflix.discovery.DiscoveryClient$CacheRefreshThread.run(DiscoveryClient.java:1435) [eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:35:21.90+0200 [APP/0]      OUT 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_91]
+2016-10-18T13:35:21.90+0200 [APP/0]      OUT 	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_91]
+2016-10-18T13:35:21.90+0200 [APP/0]      OUT 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_91]
+2016-10-18T13:35:21.90+0200 [APP/0]      OUT 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_91]
+2016-10-18T13:35:21.90+0200 [APP/0]      OUT 	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_91]
+2016-10-18T13:35:21.90+0200 [APP/0]      OUT 2016-10-18 11:35:21.902 DEBUG 18 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Completed cache refresh task for discovery. All Apps hash code is Local region apps hashcode: null, is fetching remote regions? false 
+2016-10-18T13:35:21.99+0200 [APP/0]      OUT 2016-10-18 11:35:21.998  INFO 18 --- [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_EUREKA-TEST/eaaf445f-8246-4012-777f-0bd3ca52b079: registering service...
+2016-10-18T13:35:21.99+0200 [APP/0]      OUT 2016-10-18 11:35:21.998 DEBUG 18 --- [nfoReplicator-0] c.n.d.s.t.d.RetryableEurekaHttpClient    : Clearing quarantined list of size 1
+2016-10-18T13:35:21.99+0200 [APP/0]      OUT 2016-10-18 11:35:21.998 DEBUG 18 --- [nfoReplicator-0] n.d.s.t.j.AbstractJerseyEurekaHttpClient : Created client for url: http://service-discovery.local.pcfdev.io:8761/eureka/
+2016-10-18T13:35:22.00+0200 [APP/0]      OUT 2016-10-18 11:35:21.999 DEBUG 18 --- [nfoReplicator-0] c.n.d.shared.MonitoredConnectionManager  : Get connection: {}->http://service-discovery.local.pcfdev.io:8761, timeout = 5000
+2016-10-18T13:35:22.00+0200 [APP/0]      OUT 2016-10-18 11:35:21.999 DEBUG 18 --- [nfoReplicator-0] c.n.d.shared.NamedConnectionPool         : [{}->http://service-discovery.local.pcfdev.io:8761] total kept alive: 0, total issued: 0, total allocated: 0 out of 200
+2016-10-18T13:35:22.00+0200 [APP/0]      OUT 2016-10-18 11:35:21.999 DEBUG 18 --- [nfoReplicator-0] c.n.d.shared.NamedConnectionPool         : No free connections [{}->http://service-discovery.local.pcfdev.io:8761][null]
+2016-10-18T13:35:22.00+0200 [APP/0]      OUT 2016-10-18 11:35:21.999 DEBUG 18 --- [nfoReplicator-0] c.n.d.shared.NamedConnectionPool         : Available capacity: 50 out of 50 [{}->http://service-discovery.local.pcfdev.io:8761][null]
+2016-10-18T13:35:22.00+0200 [APP/0]      OUT 2016-10-18 11:35:21.999 DEBUG 18 --- [nfoReplicator-0] c.n.d.shared.NamedConnectionPool         : Creating new connection [{}->http://service-discovery.local.pcfdev.io:8761]
+2016-10-18T13:35:22.00+0200 [APP/0]      OUT 2016-10-18 11:35:22.000 DEBUG 18 --- [nfoReplicator-0] c.n.d.shared.MonitoredConnectionManager  : Released connection is not reusable.
+2016-10-18T13:35:22.00+0200 [APP/0]      OUT 2016-10-18 11:35:22.001 DEBUG 18 --- [nfoReplicator-0] c.n.d.shared.NamedConnectionPool         : Releasing connection [{}->http://service-discovery.local.pcfdev.io:8761][null]
+2016-10-18T13:35:22.00+0200 [APP/0]      OUT 2016-10-18 11:35:22.001 DEBUG 18 --- [nfoReplicator-0] c.n.d.shared.NamedConnectionPool         : Notifying no-one, there are no waiting threads
+2016-10-18T13:35:22.00+0200 [APP/0]      OUT 2016-10-18 11:35:22.002 DEBUG 18 --- [nfoReplicator-0] n.d.s.t.j.AbstractJerseyEurekaHttpClient : Jersey HTTP POST http://service-discovery.local.pcfdev.io:8761/eureka//apps/EUREKA-TEST with instance eaaf445f-8246-4012-777f-0bd3ca52b079; statusCode=N/A
+2016-10-18T13:35:22.00+0200 [APP/0]      OUT 2016-10-18 11:35:22.002 ERROR 18 --- [nfoReplicator-0] c.n.d.s.t.d.RedirectingEurekaHttpClient  : Request execution error
+2016-10-18T13:35:22.00+0200 [APP/0]      OUT com.sun.jersey.api.client.ClientHandlerException: java.net.ConnectException: Connection refused
+2016-10-18T13:35:22.00+0200 [APP/0]      OUT 	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187) ~[jersey-apache-client4-1.19.1.jar!/:1.19.1]
+2016-10-18T13:35:22.00+0200 [APP/0]      OUT 	at com.sun.jersey.api.client.filter.GZIPContentEncodingFilter.handle(GZIPContentEncodingFilter.java:123) ~[jersey-client-1.19.1.jar!/:1.19.1]
+2016-10-18T13:35:22.00+0200 [APP/0]      OUT 	at com.netflix.discovery.EurekaIdentityHeaderFilter.handle(EurekaIdentityHeaderFilter.java:27) ~[eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:35:22.00+0200 [APP/0]      OUT 	at com.sun.jersey.api.client.Client.handle(Client.java:652) ~[jersey-client-1.19.1.jar!/:1.19.1]
+2016-10-18T13:35:22.00+0200 [APP/0]      OUT 	at com.sun.jersey.api.client.WebResource.handle(WebResource.java:682) ~[jersey-client-1.19.1.jar!/:1.19.1]
+2016-10-18T13:35:22.00+0200 [APP/0]      OUT 	at com.sun.jersey.api.client.WebResource.access$200(WebResource.java:74) ~[jersey-client-1.19.1.jar!/:1.19.1]
+2016-10-18T13:35:22.00+0200 [APP/0]      OUT 	at com.sun.jersey.api.client.WebResource$Builder.post(WebResource.java:570) ~[jersey-client-1.19.1.jar!/:1.19.1]
+2016-10-18T13:35:22.00+0200 [APP/0]      OUT 	at com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.register(AbstractJerseyEurekaHttpClient.java:56) ~[eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:35:22.00+0200 [APP/0]      OUT 	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59) [eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:35:22.00+0200 [APP/0]      OUT 	at com.netflix.discovery.shared.transport.decorator.MetricsCollectingEurekaHttpClient.execute(MetricsCollectingEurekaHttpClient.java:73) ~[eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:35:22.00+0200 [APP/0]      OUT 	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56) [eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:35:22.00+0200 [APP/0]      OUT 	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59) [eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:35:22.00+0200 [APP/0]      OUT 	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:118) ~[eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:35:22.00+0200 [APP/0]      OUT 	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:79) ~[eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:35:22.00+0200 [APP/0]      OUT 	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56) [eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:35:22.00+0200 [APP/0]      OUT 	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59) [eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:35:22.00+0200 [APP/0]      OUT 	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:119) [eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:35:22.00+0200 [APP/0]      OUT 	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56) [eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:35:22.00+0200 [APP/0]      OUT 	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59) [eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:35:22.00+0200 [APP/0]      OUT 	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77) [eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:35:22.00+0200 [APP/0]      OUT 	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56) [eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:35:22.00+0200 [APP/0]      OUT 	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:815) [eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:35:22.00+0200 [APP/0]      OUT 	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:104) [eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:35:22.00+0200 [APP/0]      OUT 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_91]
+2016-10-18T13:35:22.00+0200 [APP/0]      OUT 	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_91]
+2016-10-18T13:35:22.00+0200 [APP/0]      OUT 	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180) [na:1.8.0_91]
+2016-10-18T13:35:22.00+0200 [APP/0]      OUT 	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293) [na:1.8.0_91]
+2016-10-18T13:35:22.00+0200 [APP/0]      OUT 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_91]
+2016-10-18T13:35:22.00+0200 [APP/0]      OUT 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_91]
+2016-10-18T13:35:22.00+0200 [APP/0]      OUT 	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_91]
+2016-10-18T13:35:22.00+0200 [APP/0]      OUT Caused by: java.net.ConnectException: Connection refused
+2016-10-18T13:35:22.00+0200 [APP/0]      OUT 	at java.net.PlainSocketImpl.socketConnect(Native Method) ~[na:1.8.0_91]
+2016-10-18T13:35:22.00+0200 [APP/0]      OUT 	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_91]
+2016-10-18T13:35:22.00+0200 [APP/0]      OUT 	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_91]
+2016-10-18T13:35:22.00+0200 [APP/0]      OUT 	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_91]
+2016-10-18T13:35:22.00+0200 [APP/0]      OUT 	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_91]
+2016-10-18T13:35:22.00+0200 [APP/0]      OUT 	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_91]
+2016-10-18T13:35:22.00+0200 [APP/0]      OUT 	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:120) ~[httpclient-4.5.2.jar!/:4.5.2]
+2016-10-18T13:35:22.00+0200 [APP/0]      OUT 	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:179) ~[httpclient-4.5.2.jar!/:4.5.2]
+2016-10-18T13:35:22.00+0200 [APP/0]      OUT 	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144) ~[httpclient-4.5.2.jar!/:4.5.2]
+2016-10-18T13:35:22.00+0200 [APP/0]      OUT 	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:134) ~[httpclient-4.5.2.jar!/:4.5.2]
+2016-10-18T13:35:22.00+0200 [APP/0]      OUT 	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:612) ~[httpclient-4.5.2.jar!/:4.5.2]
+2016-10-18T13:35:22.00+0200 [APP/0]      OUT 	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:447) ~[httpclient-4.5.2.jar!/:4.5.2]
+2016-10-18T13:35:22.00+0200 [APP/0]      OUT 	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:884) ~[httpclient-4.5.2.jar!/:4.5.2]
+2016-10-18T13:35:22.00+0200 [APP/0]      OUT 	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:117) ~[httpclient-4.5.2.jar!/:4.5.2]
+2016-10-18T13:35:22.00+0200 [APP/0]      OUT 	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55) ~[httpclient-4.5.2.jar!/:4.5.2]
+2016-10-18T13:35:22.00+0200 [APP/0]      OUT 	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:173) ~[jersey-apache-client4-1.19.1.jar!/:1.19.1]
+2016-10-18T13:35:22.00+0200 [APP/0]      OUT 	... 29 common frames omitted
+2016-10-18T13:35:22.00+0200 [APP/0]      OUT 2016-10-18 11:35:22.002  WARN 18 --- [nfoReplicator-0] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failure
+2016-10-18T13:35:22.00+0200 [APP/0]      OUT 2016-10-18 11:35:22.003  WARN 18 --- [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_EUREKA-TEST/eaaf445f-8246-4012-777f-0bd3ca52b079 - registration failed Cannot execute request on any known server
+2016-10-18T13:35:22.00+0200 [APP/0]      OUT com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+2016-10-18T13:35:22.00+0200 [APP/0]      OUT 	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:111) ~[eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:35:22.00+0200 [APP/0]      OUT 	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56) ~[eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:35:22.00+0200 [APP/0]      OUT 	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59) ~[eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:35:22.00+0200 [APP/0]      OUT 	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77) ~[eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:35:22.00+0200 [APP/0]      OUT 	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56) ~[eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:35:22.00+0200 [APP/0]      OUT 	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:815) ~[eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:35:22.00+0200 [APP/0]      OUT 	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:104) [eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:35:22.00+0200 [APP/0]      OUT 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_91]
+2016-10-18T13:35:22.00+0200 [APP/0]      OUT 	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_91]
+2016-10-18T13:35:22.00+0200 [APP/0]      OUT 	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180) [na:1.8.0_91]
+2016-10-18T13:35:22.00+0200 [APP/0]      OUT 	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293) [na:1.8.0_91]
+2016-10-18T13:35:22.00+0200 [APP/0]      OUT 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_91]
+2016-10-18T13:35:22.00+0200 [APP/0]      OUT 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_91]
+2016-10-18T13:35:22.00+0200 [APP/0]      OUT 	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_91]
+2016-10-18T13:35:22.00+0200 [APP/0]      OUT 2016-10-18 11:35:22.003  WARN 18 --- [nfoReplicator-0] c.n.discovery.InstanceInfoReplicator     : There was a problem with the instance info replicator
+2016-10-18T13:35:22.00+0200 [APP/0]      OUT com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+2016-10-18T13:35:22.00+0200 [APP/0]      OUT 	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:111) ~[eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:35:22.00+0200 [APP/0]      OUT 	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56) ~[eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:35:22.00+0200 [APP/0]      OUT 	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59) ~[eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:35:22.00+0200 [APP/0]      OUT 	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77) ~[eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:35:22.00+0200 [APP/0]      OUT 	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56) ~[eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:35:22.00+0200 [APP/0]      OUT 	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:815) ~[eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:35:22.00+0200 [APP/0]      OUT 	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:104) ~[eureka-client-1.4.11.jar!/:1.4.11]
+2016-10-18T13:35:22.00+0200 [APP/0]      OUT 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_91]
+2016-10-18T13:35:22.00+0200 [APP/0]      OUT 	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_91]
+2016-10-18T13:35:22.00+0200 [APP/0]      OUT 	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180) [na:1.8.0_91]
+2016-10-18T13:35:22.00+0200 [APP/0]      OUT 	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293) [na:1.8.0_91]
+2016-10-18T13:35:22.00+0200 [APP/0]      OUT 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_91]
+2016-10-18T13:35:22.00+0200 [APP/0]      OUT 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_91]
+2016-10-18T13:35:22.00+0200 [APP/0]      OUT 	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_91]
