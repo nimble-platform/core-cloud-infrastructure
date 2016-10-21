@@ -30,3 +30,4 @@ fi
 cf push -f config-server/manifest.yml
 cf push -f service-discovery/manifest.yml
 cf push -f client-template/manifest.yml
+cf push -f proxy-server/manifest.yml

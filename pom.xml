@@ -14,7 +14,7 @@
         <module>service-discovery</module>
         <module>config-server</module>
         <module>client-template</module>
-        <!--<module>proxy-server</module>-->
+        <module>proxy-server</module>
     </modules>
 
     <parent>
