@@ -11,4 +11,3 @@ applications:
   services:
     - discovery-service
     - config-service
-    - paperlog

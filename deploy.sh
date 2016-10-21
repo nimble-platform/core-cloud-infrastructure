@@ -1,13 +1,14 @@
 #!/usr/bin/env bash
 
 # check args
-if [ "$#" -ne "2" ]; then
-   echo "Usage: sh deploy.sh EUREKA_URL CONFIG_URL";
+if [ "$#" -ne "1" ]; then
+   echo "Usage: sh deploy.sh DOMAIN";
    exit;
 fi
 
-EUREKA_URL=$1
-CONFIG_URL=$2
+DOMAIN=$1
+EUREKA_URL="http://nimble-service-discovery."$DOMAIN
+CONFIG_URL="http://nimble-config-server."$DOMAIN
 
 # build projects
 mvn clean package
