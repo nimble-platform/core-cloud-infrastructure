@@ -3,6 +3,6 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/jinnerbichler/nimble_test_config_rep0
+          uri: https://github.com/nimble-platform/cloud-config
 server:
     port: 8888
