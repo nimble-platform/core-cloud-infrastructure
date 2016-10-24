@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: hystrix-dashboard
+  cloud:
+    config:
+      uri: ${vcap.services.config-service.credentials.url}
+    discovery:
+      enabled: false
+logging:
+  level:
+    org:
+      springframework: DEBUG
+    com:
+      netflix: DEBUG

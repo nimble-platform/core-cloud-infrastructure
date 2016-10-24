@@ -1,11 +1,11 @@
 ---
 applications:
-- name: client-template
-  host: nimble-client-template
+- name: user-registration
+  host: nimble-user-registration
   memory: 512M
   instances: 1
   buildpack: java_buildpack
-  path: target/client-template-0.0.1-SNAPSHOT.jar
+  path: target/user-registration-0.0.1-SNAPSHOT.jar
   env:
     spring.profiles.active: cloud
   services:

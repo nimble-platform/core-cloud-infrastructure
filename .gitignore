@@ -197,3 +197,4 @@ hs_err_pid*
 
 ### Custom ###
 .idea
+.gradle

@@ -1,7 +1,0 @@
-spring:
-  application:
-    name: client-template
-  cloud:
-    config:
-      uri: ${vcap.services.config-service.credentials.url}
-
