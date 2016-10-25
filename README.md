@@ -2,7 +2,7 @@
 This repository sets up the general microservice infrastructure for the Nimble platform.
 
 ## Modules
-The following sections describes each model briefly.
+The following sections describes each module briefly.
 
 ### Config Server (config-server)
 The module 'config-server' is in charge of the central configuration. It fetches the config from a public git repository.
