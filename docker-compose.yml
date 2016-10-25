@@ -1,0 +1,10 @@
+config-server:
+  image: nimbleplatform/config-server
+  ports:
+   - "8888:8888"
+  links:
+   - discovery-service
+discovery-service:
+  image: nimbleplatform/discovery-service
+  ports:
+    - "8761:8761"
