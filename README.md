@@ -1,4 +1,4 @@
-# cloud-infrastructure
+# Microservice Infrastructure for the Nimble Platform
 This repository sets up the general microservice infrastructure for the Nimble platform.
 
 ## Modules
