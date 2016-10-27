@@ -1,3 +1,5 @@
 spring:
   application:
     name: config-server
+server:
+    port: ${PORT:8888}

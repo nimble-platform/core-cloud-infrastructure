@@ -7,3 +7,5 @@ spring:
       failFast: true
     discovery:
       enabled: false
+server:
+  port: ${PORT:9080}

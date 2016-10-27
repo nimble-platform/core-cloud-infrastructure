@@ -4,8 +4,6 @@ spring:
       server:
         git:
           uri: https://github.com/nimble-platform/cloud-config
-server:
-    port: ${PORT:8888}
 encrypt:
   keyStore:
     location: classpath:/configserver.jks
