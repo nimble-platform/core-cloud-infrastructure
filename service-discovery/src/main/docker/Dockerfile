@@ -1,4 +1,4 @@
-FROM nimbleplatform/base-image:latest
+FROM java:8
 VOLUME /tmp
 ADD service-discovery-0.0.1.jar app.jar
 ADD entry.sh entry.sh

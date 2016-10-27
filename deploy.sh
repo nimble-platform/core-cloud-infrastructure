@@ -65,6 +65,13 @@ elif [ "$1" == "--docker-run" ]; then
 
     docker-compose -f docker/docker-compose.yml up
 
+elif [ "$1" == "--docker-push" ]; then
+
+    mvn -f config-server/pom.xml docker:push
+    mvn -f service-discovery/pom.xml docker:push
+    mvn -f gateway-proxy/pom.xml docker:push
+    mvn -f hystrix-dashboard/pom.xml docker:push
+
 else
     echo Wrong usage. Provide either --deploy-cf, --reset-cf or --docker-build as parameter.
     exit 1
