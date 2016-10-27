@@ -1,6 +1,0 @@
-spring:
-  application:
-    name: proxy-server
-  cloud:
-    config:
-      uri: ${vcap.services.config-service.credentials.url}

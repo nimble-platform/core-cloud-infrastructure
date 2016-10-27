@@ -18,7 +18,7 @@ function deploy_service(){
     fi
 }
 
-if [ "$1" == "--deploy" ]; then
+if [ "$1" == "--cf-deploy" ]; then
 
     # build projects
     mvn clean package
@@ -30,17 +30,18 @@ if [ "$1" == "--deploy" ]; then
     cf push -f service-discovery/manifest.yml
     deploy_service service-discovery discovery-service
 
+    cf push -f gateway-proxy/manifest.yml
+#    cf push -f hystrix-dashboard/manifest.yml
+
     cf push -f sample-client/manifest.yml
-    cf push -f proxy-server/manifest.yml
-    #cf push -f hystrix-dashboard/manifest.yml
     cf push -f user-registration/manifest.yml
 
-elif [ "$1" == "--reset" ]; then
+elif [ "$1" == "--cf-reset" ]; then
 
     cf delete sample-client -f
     cf delete service-discovery -f
     cf delete config-server -f
-    cf delete proxy-server -f
+    cf delete gateway-proxy -f
     cf delete hystrix-dashboard -f
     cf delete user-registration -f
 
@@ -48,7 +49,24 @@ elif [ "$1" == "--reset" ]; then
 
     cf delete-service discovery-service -f
     cf delete-service config-service -f
+
+elif [ "$1" == "--docker-build" ]; then
+
+    # build projects
+    mvn clean package
+
+    # build docker images
+    mvn -f config-server/pom.xml docker:build
+    mvn -f service-discovery/pom.xml docker:build
+    mvn -f gateway-proxy/pom.xml docker:build
+    mvn -f hystrix-dashboard/pom.xml docker:build
+
+elif [ "$1" == "--docker-run" ]; then
+
+    docker-compose -f docker/docker-compose.yml up
+
 else
-    echo Wrong usage. Provide either --deploy or --reset as parameter.
+    echo Wrong usage. Provide either --deploy-cf, --reset-cf or --docker-build as parameter.
+    exit 1
 fi
 

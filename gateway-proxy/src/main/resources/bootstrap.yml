@@ -1,6 +1,8 @@
+server:
+  port: ${PORT:80}
 spring:
   application:
-    name: service-discovery
+    name: proxy-server
   cloud:
     config:
       uri: ${vcap.services.config-service.credentials.url:${CONFIG_SERVER_URI:http://localhost:8888}}

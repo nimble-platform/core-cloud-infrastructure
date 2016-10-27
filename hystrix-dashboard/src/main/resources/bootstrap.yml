@@ -3,12 +3,7 @@ spring:
     name: hystrix-dashboard
   cloud:
     config:
-      uri: ${vcap.services.config-service.credentials.url}
+      uri: ${vcap.services.config-service.credentials.url:${CONFIG_SERVER_URI:http://localhost:8888}}
+      failFast: true
     discovery:
       enabled: false
-logging:
-  level:
-    org:
-      springframework: DEBUG
-    com:
-      netflix: DEBUG
