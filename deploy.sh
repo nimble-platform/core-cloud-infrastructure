@@ -30,7 +30,7 @@ if [ "$1" == "--deploy-cf" ]; then
     cf push -f service-discovery/manifest.yml
     deploy_service service-discovery discovery-service
 
-    cf push -f proxy-server/manifest.yml
+    cf push -f gateway-proxyr/manifest.yml
     cf push -f hystrix-dashboard/manifest.yml
 
 #    cf push -f sample-client/manifest.yml
@@ -41,7 +41,7 @@ elif [ "$1" == "--reset-cf" ]; then
     cf delete sample-client -f
     cf delete service-discovery -f
     cf delete config-server -f
-    cf delete proxy-server -f
+    cf delete gateway-proxy -f
     cf delete hystrix-dashboard -f
     cf delete user-registration -f
 
@@ -58,7 +58,7 @@ elif [ "$1" == "--docker-build" ]; then
     # build docker images
     mvn -f config-server/pom.xml docker:build
     mvn -f service-discovery/pom.xml docker:build
-    mvn -f proxy-server/pom.xml docker:build
+    mvn -f gateway-proxy/pom.xml docker:build
     mvn -f hystrix-dashboard/pom.xml docker:build
 
 else

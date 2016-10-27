@@ -1,11 +1,11 @@
 ---
 applications:
-- name: proxy-server
-  host: nimble-proxy-server
+- name: gateway-proxy
+  host: nimble-gateway-proxy
   memory: 512M
   instances: 1
   buildpack: java_buildpack
-  path: target/proxy-server-0.0.1.jar
+  path: target/gateway-proxy-0.0.1.jar
   env:
     spring.profiles.active: cloudfoundry
   services:

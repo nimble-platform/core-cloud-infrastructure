@@ -1,6 +1,6 @@
 FROM java:8
 VOLUME /tmp
-ADD proxy-server-0.0.1.jar app.jar
+ADD gateway-proxy-0.0.1.jar app.jar
 ADD entry.sh entry.sh
 RUN bash -c 'touch /app.jar'
 EXPOSE 80

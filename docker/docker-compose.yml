@@ -14,8 +14,8 @@ service-discovery:
   links:
    - config-server
 
-proxy-server:
-  image: nimbleplatform/proxy-server
+gateway-proxy:
+  image: nimbleplatform/gateway-proxy
   env_file:
     - env_vars
   ports:
