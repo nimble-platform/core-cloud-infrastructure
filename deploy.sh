@@ -18,7 +18,7 @@ function deploy_service(){
     fi
 }
 
-if [ "$1" == "git" ]; then
+if [ "$1" == "--deploy-cf" ]; then
 
     # build projects
     mvn clean package
@@ -30,11 +30,11 @@ if [ "$1" == "git" ]; then
     cf push -f service-discovery/manifest.yml
     deploy_service service-discovery discovery-service
 
-    cf push -f gateway-proxyr/manifest.yml
-    cf push -f hystrix-dashboard/manifest.yml
+    cf push -f gateway-proxy/manifest.yml
+#    cf push -f hystrix-dashboard/manifest.yml
 
-#    cf push -f sample-client/manifest.yml
-#    cf push -f user-registration/manifest.yml
+    cf push -f sample-client/manifest.yml
+    cf push -f user-registration/manifest.yml
 
 elif [ "$1" == "--reset-cf" ]; then
 
