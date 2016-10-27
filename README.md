@@ -19,14 +19,17 @@ The circuit breaker pattern is implemented using Netflix Hystrix. This dashboard
 
 ## Deployment
 
-### Cloud Fondry
+### Cloud Foundry
 
 In order to deploy the infrastructure execute 
+
 ```shell
 sh deploy.sh --cf-deploy
 ```
+
 with the Cloud Foundry CLI tool installed and properly authenticated.
 To reset all applications and services execute the following the command.
+
 ```shell
 sh deploy.sh --cf-reset
 ```
