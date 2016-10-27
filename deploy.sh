@@ -18,7 +18,7 @@ function deploy_service(){
     fi
 }
 
-if [ "$1" == "--deploy-cf" ]; then
+if [ "$1" == "git" ]; then
 
     # build projects
     mvn clean package
