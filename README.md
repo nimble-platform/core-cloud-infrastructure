@@ -11,7 +11,7 @@ Please see application.yml for further details.
 ### Service Discovery (service-discovery)
 Netflix Eureka is used as service discovery and registration tool.
 
-### Edge Proxy Server (proxy-server)
+### Gateway Proxy Server (gateway-proxy)
 The public entry point is a Netlix Zuul service, which is configured using the central configuration server.
 
 ### Hystrix Dashboard (hystrix-dashboard)
@@ -19,12 +19,23 @@ The circuit breaker pattern is implemented using Netflix Hystrix. This dashboard
 
 ## Deployment
 
+### Cloud Fondry
+
 In order to deploy the infrastructure execute 
 ```shell
-sh cf.sh --deploy
+sh deploy.sh --cf-deploy
 ```
 with the Cloud Foundry CLI tool installed and properly authenticated.
 To reset all applications and services execute the following the command.
 ```shell
-sh cf.sh --reset
+sh deploy.sh --cf-reset
+```
+
+# Docker
+
+Execute the following command with Docker preinstalled.
+
+```shell
+sh deploy.sh --docker-build
+sh deploy.sh --docker-run
 ```
