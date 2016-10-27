@@ -34,7 +34,7 @@ To reset all applications and services execute the following the command.
 sh deploy.sh --cf-reset
 ```
 
-# Docker
+### Docker
 
 Execute the following command with Docker preinstalled.
 
