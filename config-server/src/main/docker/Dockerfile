@@ -1,4 +1,5 @@
 FROM java:8
+MAINTAINER Salzburg Research <nimble-srfg@salzburgresearch.at>
 VOLUME /tmp
 ADD config-server-0.0.1.jar app.jar
 RUN bash -c 'touch /app.jar'

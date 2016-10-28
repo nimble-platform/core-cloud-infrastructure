@@ -16,6 +16,11 @@
         <relativePath>../pom.xml</relativePath>
     </parent>
 
+    <properties>
+        <!-- Version was set back due to bug: http://jira.qos.ch/browse/LOGBACK-1158 -->
+        <logback.version>1.1.6</logback.version>
+    </properties>
+
     <dependencies>
         <dependency>
             <groupId>org.springframework.cloud</groupId>
@@ -45,7 +50,7 @@
             <groupId>net.logstash.logback</groupId>
             <artifactId>logstash-logback-encoder</artifactId>
             <version>4.7</version>
-            </dependency>
+        </dependency>
     </dependencies>
 
     <build>
