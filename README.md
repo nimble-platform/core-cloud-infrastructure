@@ -19,7 +19,15 @@ The circuit breaker pattern is implemented using Netflix Hystrix. This dashboard
 
 ## Deployment
 
+Currently the infrastructure can be deployed using Cloud Foundry or Docker. The following sections provide more information. 
+Please make sure to have all dependencies installed (or running).
+
 ### Cloud Foundry
+
+**Dependencies:**
+
+* Cloud Foundry Command Line Interface (CLI)
+* Maven 3
 
 In order to deploy the infrastructure execute 
 
@@ -27,7 +35,7 @@ In order to deploy the infrastructure execute
 sh deploy.sh --cf-deploy
 ```
 
-with the Cloud Foundry CLI tool installed and properly authenticated.
+with the Cloud Foundry CLI tool installed and properly authenticated. This may take a couple of minutes, so grab a cup of coffee in the meantime.
 To reset all applications and services execute the following the command.
 
 ```shell
@@ -35,6 +43,10 @@ sh deploy.sh --cf-reset
 ```
 
 ### Docker
+
+* Docker (running)
+* Docker Compose
+* Maven 3
 
 Execute the following command with Docker preinstalled.
 
