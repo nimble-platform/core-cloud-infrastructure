@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <configuration debug="false">
 
+    <springProperty name="logstash-uri" source="logstash.uri" defaultValue="localhost:5000"/>
+
     <appender name="LOGSTASH" class="net.logstash.logback.appender.LogstashTcpSocketAppender">
-        <destination>127.0.0.1:5000</destination>
+        <destination>${logstash-uri}</destination>
 
         <!-- encoder is required -->
         <encoder class="net.logstash.logback.encoder.LogstashEncoder" />
@@ -10,7 +12,9 @@
 
     <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
         <encoder>
-            <pattern>%date %-5level %logger - %msg%n</pattern>
+            <pattern>
+                %d{yyyy-MM-dd HH:mm:ss} [%thread] %level %logger{35} - %msg%n
+            </pattern>
         </encoder>
     </appender>
 

@@ -29,6 +29,9 @@ public class Application {
 
     private static Logger logger = LoggerFactory.getLogger(Application.class);
 
+    @Value("${build.version}")
+    private String buildVersion;
+
     @Autowired
     private UserRegistrationClient userClient;
 
@@ -38,7 +41,7 @@ public class Application {
         logger.info("Requested Homepage");
         logger.info("Sample 1");
         logger.info("Sample 3");
-        return "HOMEPAGE";
+        return buildVersion;
     }
 
     @RequestMapping("/user/{userId}")
