@@ -1,9 +1,15 @@
+##########################
+#### MS Infrastructure ###
+##########################
+
 config-server:
   image: nimbleplatform/config-server
   env_file:
     - env_vars
   ports:
-   - "8888:8888"
+    - "8888:8888"
+  links:
+    - logstash
 
 service-discovery:
   image: nimbleplatform/service-discovery
@@ -12,7 +18,8 @@ service-discovery:
   ports:
     - "8761:8761"
   links:
-   - config-server
+    - config-server
+    - logstash
 
 gateway-proxy:
   image: nimbleplatform/gateway-proxy
@@ -21,8 +28,9 @@ gateway-proxy:
   ports:
     - "10001:80"
   links:
-   - config-server
-   - service-discovery
+    - config-server
+    - service-discovery
+    - logstash
 
 hystrix-dashboard:
   image: nimbleplatform/hystrix-dashboard
@@ -31,5 +39,35 @@ hystrix-dashboard:
   ports:
     - "9080:9080"
   links:
-   - config-server
-   - service-discovery
+    - config-server
+    - service-discovery
+    - logstash
+
+##########################
+####### ELK Stack ########
+##########################
+
+elasticsearch:
+  image: elasticsearch:latest
+  ports:
+    - "9200:9200"
+    - "9300:9300"
+
+logstash:
+  build: elk/logstash/
+  command: logstash -f /etc/logstash/conf.d/logstash.conf
+  volumes:
+    - ./elk/logstash/config:/etc/logstash/conf.d
+  ports:
+    - "5000:5000"
+  links:
+    - elasticsearch
+
+kibana:
+  build: elk/kibana/
+  volumes:
+    - ./elk/kibana/config/:/opt/kibana/config/
+  ports:
+    - "5601:5601"
+  links:
+    - elasticsearch
