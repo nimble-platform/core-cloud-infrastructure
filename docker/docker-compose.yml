@@ -8,8 +8,8 @@ config-server:
     - env_vars
   ports:
     - "8888:8888"
-  links:
-    - logstash
+#  links:
+#    - logstash
 
 service-discovery:
   image: nimbleplatform/service-discovery
@@ -19,7 +19,7 @@ service-discovery:
     - "8761:8761"
   links:
     - config-server
-    - logstash
+#    - logstash
 
 gateway-proxy:
   image: nimbleplatform/gateway-proxy
@@ -30,7 +30,7 @@ gateway-proxy:
   links:
     - config-server
     - service-discovery
-    - logstash
+#    - logstash
 
 hystrix-dashboard:
   image: nimbleplatform/hystrix-dashboard
@@ -41,33 +41,33 @@ hystrix-dashboard:
   links:
     - config-server
     - service-discovery
-    - logstash
-
-##########################
-####### ELK Stack ########
-##########################
-
-elasticsearch:
-  image: elasticsearch:latest
-  ports:
-    - "9200:9200"
-    - "9300:9300"
-
-logstash:
-  build: elk/logstash/
-  command: logstash -f /etc/logstash/conf.d/logstash.conf
-  volumes:
-    - ./elk/logstash/config:/etc/logstash/conf.d
-  ports:
-    - "5000:5000"
-  links:
-    - elasticsearch
-
-kibana:
-  build: elk/kibana/
-  volumes:
-    - ./elk/kibana/config/:/opt/kibana/config/
-  ports:
-    - "5601:5601"
-  links:
-    - elasticsearch
+#    - logstash
+#
+###########################
+######## ELK Stack ########
+###########################
+#
+#elasticsearch:
+#  image: elasticsearch:latest
+#  ports:
+#    - "9200:9200"
+#    - "9300:9300"
+#
+#logstash:
+#  build: elk/logstash/
+#  command: logstash -f /etc/logstash/conf.d/logstash.conf
+#  volumes:
+#    - ./elk/logstash/config:/etc/logstash/conf.d
+#  ports:
+#    - "5000:5000"
+#  links:
+#    - elasticsearch
+#
+#kibana:
+#  build: elk/kibana/
+#  volumes:
+#    - ./elk/kibana/config/:/opt/kibana/config/
+#  ports:
+#    - "5601:5601"
+#  links:
+#    - elasticsearch

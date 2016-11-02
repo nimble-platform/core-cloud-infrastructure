@@ -1,0 +1,29 @@
+##########################
+####### ELK Stack ########
+##########################
+
+elasticsearch:
+  image: elasticsearch:latest
+  ports:
+    - "9200:9200"
+    - "9300:9300"
+
+logstash:
+  build: logstash/
+  command: logstash -f /etc/logstash/conf.d/logstash.conf
+  volumes:
+    - ./logstash/config:/etc/logstash/conf.d
+    - ./logstash/log:/var/log/logstash
+  ports:
+    - "5000:5000/udp"
+  links:
+    - elasticsearch
+
+kibana:
+  build: kibana/
+  volumes:
+    - ./kibana/config/:/opt/kibana/config/
+  ports:
+    - "5601:5601"
+  links:
+    - elasticsearch
