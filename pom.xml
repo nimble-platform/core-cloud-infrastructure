@@ -13,10 +13,8 @@
     <modules>
         <module>service-discovery</module>
         <module>config-server</module>
-        <module>sample-client</module>
         <module>gateway-proxy</module>
         <module>hystrix-dashboard</module>
-        <module>user-registration</module>
     </modules>
 
     <parent>
