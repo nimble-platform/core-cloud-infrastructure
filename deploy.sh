@@ -77,6 +77,10 @@ elif [ "$1" == "--docker-run" ]; then
 
     docker-compose -f docker/docker-compose.yml up
 
+elif [ "$1" == "--docker-stop" ]; then
+
+    docker-compose -f docker/docker-compose.yml down
+
 elif [ "$1" == "--docker-push" ]; then
 
     # base image
@@ -89,7 +93,7 @@ elif [ "$1" == "--docker-push" ]; then
     mvn -f hystrix-dashboard/pom.xml docker:push
 
 else
-    echo Wrong usage. Provide either --cf-deploy, --cf-reset, --docker-build or--docker-run as parameter.
+    echo Wrong usage. Provide either --cf-deploy, --cf-reset, --docker-build, --docker-stop or--docker-run as parameter.
     exit 2
 fi
 
