@@ -73,7 +73,7 @@ elif [ "$1" == "--docker-push" ]; then
     mvn -f hystrix-dashboard/pom.xml docker:push
 
 else
-    echo Wrong usage. Provide either --deploy-cf, --reset-cf or --docker-build as parameter.
+    echo Wrong usage. Provide either --cf-deploy, --cf-reset, --docker-build or--docker-run as parameter.
     exit 1
 fi
 
