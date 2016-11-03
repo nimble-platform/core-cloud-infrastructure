@@ -26,6 +26,7 @@ Please make sure to have all dependencies installed (or running).
 
 **Dependencies:**
 
+* Java 8
 * Cloud Foundry Command Line Interface (CLI)
 * Maven 3
 
@@ -44,6 +45,7 @@ To reset all applications and services execute the following the command.
 
 ### Docker
 
+* Java 8
 * Docker (running)
 * Docker Compose
 * Maven 3
