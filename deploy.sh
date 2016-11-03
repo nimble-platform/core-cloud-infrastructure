@@ -1,5 +1,14 @@
 #!/usr/bin/env bash
 
+echoerr() { echo "$@" 1>&2; }
+
+# Check Java version
+version=$(java -version 2>&1 | sed 's/java version "\(.*\)\.\(.*\)\..*"/\1\2/; 1q')
+if [[ "$version" < "18" ]]; then
+    echoerr version is lower than 1.8
+    exit 1
+fi
+
 function app_domain(){
   D=`cf apps | grep $1 | tr -s ' ' | cut -d' ' -f 6 | cut -d, -f1`
   echo $D
@@ -74,6 +83,6 @@ elif [ "$1" == "--docker-push" ]; then
 
 else
     echo Wrong usage. Provide either --cf-deploy, --cf-reset, --docker-build or--docker-run as parameter.
-    exit 1
+    exit 2
 fi
 
