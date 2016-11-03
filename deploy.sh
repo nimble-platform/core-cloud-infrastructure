@@ -64,6 +64,9 @@ elif [ "$1" == "--docker-build" ]; then
     # build projects
     mvn clean package
 
+    # build base image
+    docker build -t nimbleplatform/nimble-base docker/nimble-base
+
     # build docker images
     mvn -f config-server/pom.xml docker:build
     mvn -f service-discovery/pom.xml docker:build
@@ -76,6 +79,10 @@ elif [ "$1" == "--docker-run" ]; then
 
 elif [ "$1" == "--docker-push" ]; then
 
+    # base image
+    docker push nimbleplatform/nimble-base
+
+    # infrastructure images
     mvn -f config-server/pom.xml docker:push
     mvn -f service-discovery/pom.xml docker:push
     mvn -f gateway-proxy/pom.xml docker:push

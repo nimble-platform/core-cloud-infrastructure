@@ -1,6 +1,5 @@
-FROM java:8
+FROM nimbleplatform/nimble-base
 MAINTAINER Salzburg Research <nimble-srfg@salzburgresearch.at>
-RUN apt-get update && apt-get install -y netcat
 VOLUME /tmp
 ADD service-discovery-0.0.1.jar app.jar
 ADD entry.sh entry.sh
