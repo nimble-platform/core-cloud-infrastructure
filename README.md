@@ -32,14 +32,14 @@ Please make sure to have all dependencies installed (or running).
 In order to deploy the infrastructure execute 
 
 ```shell
-sh deploy.sh --cf-deploy
+deploy.sh --cf-deploy
 ```
 
 with the Cloud Foundry CLI tool installed and properly authenticated. This may take a couple of minutes, so grab a cup of coffee in the meantime.
 To reset all applications and services execute the following the command.
 
 ```shell
-sh deploy.sh --cf-reset
+deploy.sh --cf-reset
 ```
 
 ### Docker
@@ -51,6 +51,6 @@ sh deploy.sh --cf-reset
 Execute the following command with Docker preinstalled.
 
 ```shell
-sh deploy.sh --docker-build
-sh deploy.sh --docker-run
+deploy.sh --docker-build
+deploy.sh --docker-run
 ```
