@@ -2,9 +2,7 @@
 
 # Wait for the Elasticsearch container to be ready before starting Kibana.
 echo "Stalling for Elasticsearch"
-while true; do
-    nc -q 1 elasticsearch 9200 2>/dev/null && break
-done
+wget --quiet --retry-connrefused --waitretry=1 --read-timeout=20 --timeout=15 --tries inf http://elasticsearch:9200/
 
 echo "Starting Kibana"
 exec kibana
