@@ -26,24 +26,26 @@ Please make sure to have all dependencies installed (or running).
 
 **Dependencies:**
 
+* Java 8
 * Cloud Foundry Command Line Interface (CLI)
 * Maven 3
 
 In order to deploy the infrastructure execute 
 
 ```shell
-deploy.sh --cf-deploy
+./deploy.sh --cf-deploy
 ```
 
 with the Cloud Foundry CLI tool installed and properly authenticated. This may take a couple of minutes, so grab a cup of coffee in the meantime.
 To reset all applications and services execute the following the command.
 
 ```shell
-deploy.sh --cf-reset
+./deploy.sh --cf-reset
 ```
 
 ### Docker
 
+* Java 8
 * Docker (running)
 * Docker Compose
 * Maven 3
@@ -51,6 +53,6 @@ deploy.sh --cf-reset
 Execute the following command with Docker preinstalled.
 
 ```shell
-deploy.sh --docker-build
-deploy.sh --docker-run
+./deploy.sh --docker-build
+./deploy.sh --docker-run
 ```
