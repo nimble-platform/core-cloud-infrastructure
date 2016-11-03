@@ -1,9 +1,7 @@
 #!/usr/bin/env bash
 
 echo "Stalling for Config Server"
-while true; do
-    nc -q 1 config-server 8888 2>/dev/null && break
-done
+wget --quiet --retry-connrefused --waitretry=1 --read-timeout=20 --timeout=15 --tries inf http://config-server:8888/
 
 echo "Starting Application"
 java -Djava.security.egd=file:/dev/./urandom -jar /app.jar
