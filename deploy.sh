@@ -33,10 +33,7 @@ if [ "$1" == "--cf-deploy" ]; then
     deploy_service service-discovery discovery-service
 
     cf push -f gateway-proxy/manifest.yml
-#    cf push -f hystrix-dashboard/manifest.yml
-
-    cf push -f sample-client/manifest.yml
-    cf push -f user-registration/manifest.yml
+    cf push -f hystrix-dashboard/manifest.yml
 
 elif [ "$1" == "--cf-reset" ]; then
 
