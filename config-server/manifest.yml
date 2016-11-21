@@ -4,6 +4,7 @@ applications:
   host: nimble-config-server
   memory: 512M
   instances: 1
+  buildpack: java_buildpack
   path: target/config-server-0.0.1.jar
   env:
-    SPRING_PROFILES_ACTIVE: cloudfoundry
+    spring.profiles.active: cloudfoundry

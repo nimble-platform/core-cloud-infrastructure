@@ -1,6 +1,13 @@
 #!/usr/bin/env bash
 
-set -e    # Exit immediately if a command exits with a non-zero status.
+echoerr() { echo "$@" 1>&2; }
+
+# Check Java version
+version=$(java -version 2>&1 | sed 's/java version "\(.*\)\.\(.*\)\..*"/\1\2/; 1q')
+if [[ "$version" < "18" ]]; then
+    echoerr version is lower than 1.8
+    exit 1
+fi
 
 function app_domain(){
   D=`cf apps | grep $1 | tr -s ' ' | cut -d' ' -f 6 | cut -d, -f1`
@@ -33,7 +40,10 @@ if [ "$1" == "--cf-deploy" ]; then
     deploy_service service-discovery discovery-service
 
     cf push -f gateway-proxy/manifest.yml
-    cf push -f hystrix-dashboard/manifest.yml
+#    cf push -f hystrix-dashboard/manifest.yml
+
+    cf push -f sample-client/manifest.yml
+    cf push -f user-registration/manifest.yml
 
 elif [ "$1" == "--cf-reset" ]; then
 
@@ -67,10 +77,6 @@ elif [ "$1" == "--docker-run" ]; then
 
     docker-compose -f docker/docker-compose.yml up
 
-elif [ "$1" == "--docker-stop" ]; then
-
-    docker-compose -f docker/docker-compose.yml down
-
 elif [ "$1" == "--docker-push" ]; then
 
     # base image
@@ -83,7 +89,7 @@ elif [ "$1" == "--docker-push" ]; then
     mvn -f hystrix-dashboard/pom.xml docker:push
 
 else
-    echo Wrong usage. Provide either --cf-deploy, --cf-reset, --docker-build, --docker-stop or--docker-run as parameter.
+    echo Wrong usage. Provide either --cf-deploy, --cf-reset, --docker-build or--docker-run as parameter.
     exit 2
 fi
 
