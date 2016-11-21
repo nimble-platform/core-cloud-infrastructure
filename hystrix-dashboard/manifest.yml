@@ -4,9 +4,10 @@ applications:
   host: nimble-hystrix-dashboard
   memory: 512M
   instances: 1
-  path: target/hystrix-dashboard-0.0.1.jar
+  buildpack: java_buildpack
+  path: target/hystrix-dashboard-0.0.1-SNAPSHOT.jar
   env:
-    SPRING_PROFILES_ACTIVE: cloudfoundry
+    spring.profiles.active: cloudfoundry
   services:
     - discovery-service
     - config-service
