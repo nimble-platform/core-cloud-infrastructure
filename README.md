@@ -56,3 +56,9 @@ Execute the following command with Docker preinstalled.
 ./deploy.sh --docker-build
 ./deploy.sh --docker-run
 ```
+
+In order to shut down all containers, please execute:
+
+```
+./deploy.sh --docker-stop
+```
