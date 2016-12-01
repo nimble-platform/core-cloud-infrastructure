@@ -1,5 +1,5 @@
 FROM java:openjdk-8u66-jre
-MAINTAINER n
+MAINTAINER nimble-srfg@salzburgresearch.at
 
 ENV UAA_CONFIG_PATH /uaa
 ENV CATALINA_HOME /tomcat
