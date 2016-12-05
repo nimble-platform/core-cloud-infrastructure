@@ -25,7 +25,7 @@ services:
     env_file:
       - env_vars
     ports:
-      - "10001:80"
+      - "8080:80"
     links:
       - config-server
       - service-discovery
