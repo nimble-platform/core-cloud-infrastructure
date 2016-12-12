@@ -18,7 +18,7 @@ oauth:
       secret: sultanssecret
       authorized-grant-types: client_credentials
       scope: scim.read,scim.write,password.write
-      authorities: uaa.resource,scim.write,scim.read,password.write
+      authorities: uaa.resource,scim.write,scim.read,password.write,uaa.admin,clients.read,clients.admin, aczones.uaa.admin
     uluwatu:
       id: uluwatu
       secret: uluwatusecret
@@ -51,8 +51,9 @@ oauth:
       scope: none
       authorities: cloudbreak.autoscale,uaa.resource,scim.read
 
-scim:
-  username_pattern: '[a-z0-9+\-_.@]+'
+
   users:
-    - admin@sequenceiq.com|seqadmin|admin@sequenceiq.com|Default|User|openid,cloudbreak.templates,cloudbreak.blueprints,cloudbreak.credentials,cloudbreak.stacks,sequenceiq.cloudbreak.admin,sequenceiq.cloudbreak.user,sequenceiq.account.abcd1234.SequenceIQ,periscope.cluster,cloudbreak.events,cloudbreak.usages.global,cloudbreak.usages.account,cloudbreak.usages.user,cloudbreak.recipes
-    - johannes.innerbichler@salzburgresearch.at|hannes|johannes.innerbichler@salzburgresearch.at|Default|User|openid,cloudbreak.templates,cloudbreak.blueprints,cloudbreak.credentials,cloudbreak.stacks,sequenceiq.cloudbreak.admin,sequenceiq.cloudbreak.user,sequenceiq.account.abcd1234.SequenceIQ,periscope.cluster,cloudbreak.events,cloudbreak.usages.global,cloudbreak.usages.account,cloudbreak.usages.user,cloudbreak.recipes
+    #FORMAT: username|password|email|first_name|last_name(|comma-separated-authorities)
+    - j.innerbichler@gmail.com|12345|j.innerbichler@gmail.com|Johannes|Innerbichler|uaa.admin,clients.read,clients.write,clients.secret
+
+uaac client add admin --name Admin --authorized_grant_types client_credentials --scope scim.read,scim.write,password.write --authorities uaa.resource,scim.write,scim.read,password.write,uaa.admin,clients.read,clients.admin,aczones.uaa.admin
