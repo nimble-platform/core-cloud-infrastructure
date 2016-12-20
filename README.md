@@ -57,6 +57,20 @@ Execute the following command with Docker preinstalled.
 ./deploy.sh --docker-run
 ```
 
+The following services are deployed:
+
+| Port | Service           |
+|------|-------------------|
+| 8761 | service-discovery |
+| 8080 | gateway-proxy     |
+| 8888 | config-server     |
+|      |                   |
+| 9080 | hystrix-dashboard |
+| 5000 | logstash          |
+| 9200 | elasticsearch     |
+| 5601 | kibana            |
+
+
 In order to shut down all containers, please execute:
 
 ```

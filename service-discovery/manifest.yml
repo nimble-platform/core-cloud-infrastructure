@@ -4,7 +4,8 @@ applications:
   host: nimble-service-discovery
   memory: 512M
   instances: 1
-  buildpack: java_buildpack
   path: target/service-discovery-0.0.1.jar
   env:
-    spring.profiles.active: cloudfoundry
+    SPRING_PROFILES_ACTIVE: cloudfoundry
+  services:
+    - config-service

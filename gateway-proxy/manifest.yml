@@ -2,12 +2,12 @@
 applications:
 - name: gateway-proxy
   host: nimble-gateway-proxy
-  memory: 512M
   instances: 1
-  buildpack: java_buildpack
   path: target/gateway-proxy-0.0.1.jar
   env:
-    spring.profiles.active: cloudfoundry
+    SPRING_PROFILES_ACTIVE: cloudfoundry
+    CF_STAGING_TIMEOUT: 160
+    CF_STARTUP_TIMEOUT: 160
   services:
     - discovery-service
     - config-service

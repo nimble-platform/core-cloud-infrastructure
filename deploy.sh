@@ -20,7 +20,7 @@ function deploy_service(){
     fi
 }
 
-if [ "$1" == "--cf-deploy" ]; then
+if [ "$1" == "cf-deploy" ]; then
 
     # build projects
     mvn clean package
@@ -33,12 +33,9 @@ if [ "$1" == "--cf-deploy" ]; then
     deploy_service service-discovery discovery-service
 
     cf push -f gateway-proxy/manifest.yml
-#    cf push -f hystrix-dashboard/manifest.yml
+    cf push -f hystrix-dashboard/manifest.yml
 
-    cf push -f sample-client/manifest.yml
-    cf push -f user-registration/manifest.yml
-
-elif [ "$1" == "--cf-reset" ]; then
+elif [ "$1" == "cf-reset" ]; then
 
     cf delete sample-client -f
     cf delete service-discovery -f
@@ -52,7 +49,7 @@ elif [ "$1" == "--cf-reset" ]; then
     cf delete-service discovery-service -f
     cf delete-service config-service -f
 
-elif [ "$1" == "--docker-build" ]; then
+elif [ "$1" == "docker-build" ]; then
 
     # build projects
     mvn clean package
@@ -66,15 +63,21 @@ elif [ "$1" == "--docker-build" ]; then
     mvn -f gateway-proxy/pom.xml docker:build
     mvn -f hystrix-dashboard/pom.xml docker:build
 
-elif [ "$1" == "--docker-run" ]; then
+elif [ "$1" == "docker-run" ]; then
 
-    docker-compose -f docker/docker-compose.yml up
+    # start up all containers (detached mode)
+    docker-compose -f docker/docker-compose.yml up -d
 
-elif [ "$1" == "--docker-stop" ]; then
+elif [ "$1" == "docker-logs" ]; then
+
+    # connect to logs of all containers and follow them
+    docker-compose -f docker/docker-compose.yml logs -f
+
+elif [ "$1" == "docker-stop" ]; then
 
     docker-compose -f docker/docker-compose.yml down
 
-elif [ "$1" == "--docker-push" ]; then
+elif [ "$1" == "docker-push" ]; then
 
     # base image
     docker push nimbleplatform/nimble-base
@@ -86,7 +89,10 @@ elif [ "$1" == "--docker-push" ]; then
     mvn -f hystrix-dashboard/pom.xml docker:push
 
 else
-    echo Wrong usage. Provide either --cf-deploy, --cf-reset, --docker-build, --docker-stop or--docker-run as parameter.
+    echo Usage: $0 COMMAND
+    echo Commands:
+    echo -e "\tcf-deploy\n\tcf-reset"
+    echo -e "\tdocker-build\n\tdocker-run\n\tdocker-logs\n\tdocker-stop\n\tdocker-push"
     exit 2
 fi
 

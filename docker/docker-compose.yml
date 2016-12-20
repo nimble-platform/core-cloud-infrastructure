@@ -25,7 +25,7 @@ services:
     env_file:
       - env_vars
     ports:
-      - "10001:80"
+      - "8080:80"
     links:
       - config-server
       - service-discovery
@@ -54,7 +54,7 @@ services:
     build: elk/logstash/
     command: logstash -f /etc/logstash/conf.d/logstash.conf
     volumes:
-      - ./elk/logstash/config:/etc/logstash/conf.d
+      - ./logstash/log:/var/log/logstash
     ports:
       - "5000:5000"
     links:
@@ -62,8 +62,6 @@ services:
 
   kibana:
     build: elk/kibana/
-    volumes:
-      - ./elk/kibana/config/:/opt/kibana/config/
     ports:
       - "5601:5601"
     links:
