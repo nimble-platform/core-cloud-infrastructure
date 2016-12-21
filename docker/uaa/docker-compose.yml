@@ -1,5 +1,5 @@
 uaa-server:
-  build: .
+  build: uaa/
   ports:
     - "9090:8080"
   environment:
