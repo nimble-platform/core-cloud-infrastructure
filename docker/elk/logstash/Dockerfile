@@ -1,7 +1,7 @@
-FROM logstash:latest
+FROM logstash:5.1.1
 MAINTAINER Salzburg Research <nimble-srfg@salzburgresearch.at>
 
 ADD config/logstash.conf /etc/logstash/conf.d/logstash.conf
 
-# Add your logstash plugins setup here
-# Example: RUN logstash-plugin install logstash-filter-json 
+ENTRYPOINT ["/docker-entrypoint.sh"]
+CMD ["--log.level", "debug", "--verbose", "--config.debug", "-f", "/etc/logstash/conf.d/logstash.conf"]
