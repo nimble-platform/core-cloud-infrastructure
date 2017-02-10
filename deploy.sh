@@ -66,16 +66,16 @@ elif [ "$1" == "docker-build" ]; then
 elif [ "$1" == "docker-run" ]; then
 
     # start up all containers (detached mode)
-    docker-compose -f docker/docker-compose.yml -f docker/uaa/docker-compose.yml up -d
+    docker-compose -f docker/docker-compose.yml -f docker/uaa/docker-compose.yml --project-name nimble up -d
 
 elif [ "$1" == "docker-logs" ]; then
 
     # connect to logs of all containers and follow them
-    docker-compose -f docker/docker-compose.yml -f docker/uaa/docker-compose.yml logs -f
+    docker-compose -f docker/docker-compose.yml -f docker/uaa/docker-compose.yml --project-name nimble logs -f
 
 elif [ "$1" == "docker-stop" ]; then
 
-    docker-compose -f docker/docker-compose.yml  -f docker/uaa/docker-compose.yml down
+    docker-compose -f docker/docker-compose.yml  -f docker/uaa/docker-compose.yml --project-name nimble down
 
 elif [ "$1" == "docker-push" ]; then
 

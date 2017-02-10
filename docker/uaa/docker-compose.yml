@@ -1,13 +1,16 @@
-uaa-server:
-  build: uaa/
-  ports:
-    - "9090:8080"
-  environment:
-    - SPRING_PROFILES_ACTIVE=default,postgresql
-  links:
-    - uaa-db:db
+version: '2'
 
-uaa-db:
-  image: postgres
-  ports:
-    - "5432:5432"
+services:
+  uaa-server:
+    build: uaa/
+    ports:
+      - "9090:8080"
+    environment:
+      - SPRING_PROFILES_ACTIVE=default,postgresql
+    links:
+      - uaa-db:db
+
+  uaa-db:
+    image: postgres
+    ports:
+      - "5432:5432"
