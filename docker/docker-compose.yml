@@ -11,8 +11,6 @@ services:
       - env_vars
     ports:
       - "8888:8888"
-    networks:
-      - test
 
   service-discovery:
     image: nimbleplatform/service-discovery
@@ -20,10 +18,8 @@ services:
       - env_vars
     ports:
       - "8761:8761"
-    links:
+    depends_on:
       - config-server
-    networks:
-      - test
 
   gateway-proxy:
     image: nimbleplatform/gateway-proxy
@@ -31,11 +27,9 @@ services:
       - env_vars
     ports:
       - "8080:80"
-    links:
+    depends_on:
       - config-server
       - service-discovery
-    networks:
-      - test
 
   hystrix-dashboard:
     image: nimbleplatform/hystrix-dashboard
@@ -43,11 +37,9 @@ services:
       - env_vars
     ports:
       - "9080:9080"
-    links:
+    depends_on:
       - config-server
       - service-discovery
-    networks:
-      - test
 
   ###########################
   ######## ELK Stack ########
@@ -58,8 +50,6 @@ services:
     ports:
       - "9200:9200"
       - "9300:9300"
-    networks:
-      - test
 
   logstash:
     build: elk/logstash/
@@ -67,20 +57,12 @@ services:
       - ./elk/logstash/log:/var/log/logstash
     ports:
       - "5000:5000"
-    links:
+    depends_on:
       - elasticsearch
-    networks:
-      - test
 
   kibana:
     build: elk/kibana/
     ports:
       - "5601:5601"
-    links:
+    depends_on:
       - elasticsearch
-    networks:
-      - test
-
-networks:
-  test:
-    driver: bridge

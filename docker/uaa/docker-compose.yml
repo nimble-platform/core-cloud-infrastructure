@@ -7,8 +7,6 @@ services:
       - "9090:8080"
     environment:
       - SPRING_PROFILES_ACTIVE=default,postgresql
-    links:
-      - uaa-db:db
 
   uaa-db:
     image: postgres

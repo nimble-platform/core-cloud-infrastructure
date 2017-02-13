@@ -1,2 +1,5 @@
-uaa-server:
-  build: .
+version: '2'
+
+services:
+  uaa-server:
+    build: .

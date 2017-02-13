@@ -2,7 +2,7 @@ spring_profiles: postgresql
 
 database:
   driverClassName: org.postgresql.Driver
-  url: jdbc:postgresql://${DB_PORT_5432_TCP_ADDR}:${DB_PORT_5432_TCP_PORT}/${DB_ENV_DB:postgres}
+  url: jdbc:postgresql://uaa-db:5432/${DB_ENV_DB:postgres}
   username: ${DB_ENV_USER:postgres}
   password: ${DB_ENV_PASS:}
 
@@ -51,7 +51,7 @@ oauth:
       scope: none
       authorities: cloudbreak.autoscale,uaa.resource,scim.read
 
-
+scim:
   users:
     #FORMAT: username|password|email|first_name|last_name(|comma-separated-authorities)
     - j.innerbichler@gmail.com|12345|j.innerbichler@gmail.com|Johannes|Innerbichler|uaa.admin,clients.read,clients.write,clients.secret
