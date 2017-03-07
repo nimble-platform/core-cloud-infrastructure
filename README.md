@@ -33,14 +33,14 @@ Please make sure to have all dependencies installed (or running).
 In order to deploy the infrastructure execute 
 
 ```shell
-./deploy.sh --cf-deploy
+./deploy.sh cf-deploy
 ```
 
 with the Cloud Foundry CLI tool installed and properly authenticated. This may take a couple of minutes, so grab a cup of coffee in the meantime.
 To reset all applications and services execute the following the command.
 
 ```shell
-./deploy.sh --cf-reset
+./deploy.sh cf-reset
 ```
 
 ### Docker
@@ -53,8 +53,8 @@ To reset all applications and services execute the following the command.
 Execute the following command with Docker preinstalled.
 
 ```shell
-./deploy.sh --docker-build
-./deploy.sh --docker-run
+./deploy.sh docker-build
+./deploy.sh docker-run
 ```
 
 The following services are deployed:
@@ -74,7 +74,7 @@ The following services are deployed:
 In order to shut down all containers, please execute:
 
 ```
-./deploy.sh --docker-stop
+./deploy.sh docker-stop
 ```
  ---
 The project leading to this application has received funding from the European Union’s Horizon 2020 research and innovation programme under grant agreement No 723810.
