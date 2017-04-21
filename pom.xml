@@ -15,6 +15,7 @@
         <module>config-server</module>
         <module>gateway-proxy</module>
         <module>hystrix-dashboard</module>
+        <module>sidecar</module>
     </modules>
 
     <parent>

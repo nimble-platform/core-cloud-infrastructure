@@ -57,11 +57,12 @@ elif [ "$1" == "docker-build" ]; then
     # build base image
     docker build -t nimbleplatform/nimble-base docker/nimble-base
 
-    # build docker images
+    # build microservice images
     mvn -f config-server/pom.xml docker:build
     mvn -f service-discovery/pom.xml docker:build
     mvn -f gateway-proxy/pom.xml docker:build
     mvn -f hystrix-dashboard/pom.xml docker:build
+    mvn -f sidecar/pom.xml docker:build
 
 elif [ "$1" == "docker-run" ]; then
 
@@ -87,6 +88,7 @@ elif [ "$1" == "docker-push" ]; then
     mvn -f service-discovery/pom.xml docker:push
     mvn -f gateway-proxy/pom.xml docker:push
     mvn -f hystrix-dashboard/pom.xml docker:push
+    mvn -f sidecar/pom.xml docker:push
 
 else
     echo Usage: $0 COMMAND
