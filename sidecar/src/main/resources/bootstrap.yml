@@ -1,5 +1,5 @@
 server:
-  port: ${PORT:9096}
+  port: ${PORT:9097}
 spring:
   application:
     # the name of the application represents the global identifier of this microservice.
@@ -20,9 +20,11 @@ logstash:
   uri: ${vcap.services.logstash-service.credentials.url:${LOGSTASH_URI:localhost:5000}}
 
 
-# This is necessary in order to register with Eureka with status UP.
+# This is necessary in order to properly register with Eureka.
 eureka:
   instance:
     instanceEnabledOnit: true
+    hostname: ${SIDECAR_APP_HOST:}
+    preferIpAddress: false
 
 debug: true
