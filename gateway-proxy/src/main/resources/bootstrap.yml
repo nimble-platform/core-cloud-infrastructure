@@ -7,6 +7,9 @@ spring:
     config:
       uri: ${vcap.services.config-service.credentials.url:${CONFIG_SERVER_URI:http://localhost:8888}}
       failFast: true
+  mvc:
+    favicon:
+      enabled: false # disable resolution of favicon.ico.
 
 # disable registering of gateway proxy, but enable fetching of registry
 eureka:
@@ -15,4 +18,5 @@ eureka:
     fetchRegistry: true
 
 logstash:
+  uri: ${vcap.services.logstash-service.credentials.url:${LOGSTASH_URI:localhost:5000}}
   uri: ${vcap.services.logstash-service.credentials.url:${LOGSTASH_URI:localhost:5000}}

@@ -4,6 +4,7 @@ spring:
       server:
         git:
           uri: https://github.com/nimble-platform/cloud-config
+        bootstrap: true
 encrypt:
   keyStore:
     location: classpath:/configserver.jks
