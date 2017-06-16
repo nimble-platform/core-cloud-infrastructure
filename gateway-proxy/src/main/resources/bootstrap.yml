@@ -23,7 +23,7 @@ logstash:
 ---
 
 spring:
-    profiles: development
+    profiles: dev
 
 # disable time out in Hystrix and Zuul in order to ease development
 hystrix:
