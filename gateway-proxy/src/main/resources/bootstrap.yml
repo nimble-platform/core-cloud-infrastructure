@@ -19,3 +19,19 @@ eureka:
 
 logstash:
   uri: ${vcap.services.logstash-service.credentials.url:${LOGSTASH_URI:localhost:5000}}
+
+---
+
+spring:
+    profiles: development
+
+# disable time out in Hystrix and Zuul in order to ease development
+hystrix:
+  command:
+    default:
+      execution:
+        timeout:
+          enabled: false
+ribbon:
+  ReadTimeout: 100000
+  ConnectTimeout: 100000
