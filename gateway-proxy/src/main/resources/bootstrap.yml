@@ -20,6 +20,10 @@ eureka:
 logstash:
   uri: ${vcap.services.logstash-service.credentials.url:${LOGSTASH_URI:localhost:5000}}
 
+# Necessary for CORS handling
+zuul:
+  ignored-headers: Access-Control-Allow-Credentials, Access-Control-Allow-Origin
+
 ---
 
 spring:
