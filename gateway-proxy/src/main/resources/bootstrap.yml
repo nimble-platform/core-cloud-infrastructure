@@ -23,6 +23,7 @@ logstash:
 # Necessary for CORS handling
 zuul:
   ignored-headers: Access-Control-Allow-Credentials, Access-Control-Allow-Origin
+  ignoreSecurityHeaders: false
 
 ---
 
